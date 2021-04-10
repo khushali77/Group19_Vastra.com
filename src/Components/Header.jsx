@@ -5,7 +5,7 @@ function Header(){
     return(
         <div>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
-            <Navbar.Brand href="">Vastra.com</Navbar.Brand>
+            <Navbar.Brand href="/">Vastra.com</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
