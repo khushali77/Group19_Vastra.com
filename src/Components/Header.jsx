@@ -5,7 +5,7 @@ import {Navbar,Nav,NavDropdown} from "react-bootstrap";
 function Header(){
     return(
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
             <Navbar.Brand href="#home">Vastra.com</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
