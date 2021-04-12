@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Admin.css";
+import "../Css/Admin.css";
 
 const Admin = () => {
 
@@ -8,8 +8,6 @@ const Admin = () => {
 
     return (
         <div className="admin container-fluid">
-        <h1 className="admin-heading">Welcome to Admin Portal</h1>
-
          <table class="table table-bordered">
                 <thead>
                     <tr>
