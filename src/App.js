@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./Components/Header";
 import {BrowserRouter,Route} from "react-router-dom";
-// import { Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import Home from "./Pages/Home";
 import Favourites from "./Pages/Favourites";
 import MyBag from "./Pages/MyBag";
@@ -20,9 +20,9 @@ function App() {
       <Route exact path='/mybag' component={MyBag}/>
       <Route exact path='/userprofile' component={UserProfile}/>
       <Route exact path='/settings' component={Settings}/>
-      {/* <Container> */}
+      <Container>
       <Route exact path='/retailer' component={Retailer} />
-      {/* </Container> */}
+      </Container>
       <Footer/>
       </BrowserRouter>
     </div>

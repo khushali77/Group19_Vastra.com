@@ -15,12 +15,12 @@ function ProductList() {
                 <Col>
                     <h1>Product List</h1>
                 </Col>
-            </Row>
-                {/* <Col className='text-right'>
+                <Col className='text-right'>
                     <Button className='my-3'>
                         <i className='fas fa-plus'></i> Add Product
                     </Button>
-                </Col> */}
+                </Col>
+            </Row>
             
             <br></br><br></br>
             <Table striped bordered hover responsive className="table-sm">
@@ -33,137 +33,91 @@ function ProductList() {
                 </thead>
 
                 <tbody>
-                    <tr>
+                    <tr class="bg-light">
                         <td>1</td>
                         <td>Green Round neck Tshirt</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                                <Button variant='light' className='btn-sm'>
-                                <i className='fas fa-edit'></i>
-                                </Button>
+                            <button type="button" class="btn btn-default">Edit</button>
                             </LinkContainer>
 
-                            <Button variant='danger' className='btn-sm'>
-                                <i className='fas fa-trash'></i>
-                            </Button>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="bg-light">
                         <td>2</td>
                         <td>Levis Denim Jeans</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                                <Button variant='light' className='btn-sm'>
-                                <i className='fas fa-edit'></i>
-                                </Button>
+                            <button type="button" class="btn btn-default">Edit</button>
                             </LinkContainer>
 
-                            <Button variant='danger' className='btn-sm'>
-                                <i className='fas fa-trash'></i>
-                            </Button>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="bg-light">
                         <td>3</td>
                         <td>Olive Full Sleeves Tshirt</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                                <Button variant='light' className='btn-sm'>
-                                <i className='fas fa-edit'></i>
-                                </Button>
+                            <button type="button" class="btn btn-default">Edit</button>
                             </LinkContainer>
-
-                            <Button variant='danger' className='btn-sm'>
-                                <i className='fas fa-trash'></i>
-                            </Button>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="bg-light">
                         <td>4</td>
                         <td>Puma Gym drycell Tshirt</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                                <Button variant='light' className='btn-sm'>
-                                <i className='fas fa-edit'></i>
-                                </Button>
+                            <button type="button" class="btn btn-default">Edit</button>
                             </LinkContainer>
-
-                            <Button variant='danger' className='btn-sm'>
-                                <i className='fas fa-trash'></i>
-                            </Button>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="bg-light">
                         <td>5</td>
                         <td>Nike Track Pants</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                                <Button variant='light' className='btn-sm'>
-                                <i className='fas fa-edit'></i>
-                                </Button>
+                            <button type="button" class="btn btn-default">Edit</button>
                             </LinkContainer>
-
-                            <Button variant='danger' className='btn-sm'>
-                                <i className='fas fa-trash'></i>
-                            </Button>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="bg-light">
                         <td>6</td>
                         <td>Green Round neck Tshirt</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                                <Button variant='light' className='btn-sm'>
-                                <i className='fas fa-edit'></i>
-                                </Button>
+                            <button type="button" class="btn btn-default">Edit</button>
                             </LinkContainer>
-
-                            <Button variant='danger' className='btn-sm'>
-                                <i className='fas fa-trash'></i>
-                            </Button>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="bg-light">
                         <td>7</td>
                         <td>Black round-neck Tshirt</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                                <Button variant='light' className='btn-sm'>
-                                <i className='fas fa-edit'></i>
-                                </Button>
+                            <button type="button" class="btn btn-default">Edit</button>
                             </LinkContainer>
-
-                            <Button variant='danger' className='btn-sm'>
-                                <i className='fas fa-trash'></i>
-                            </Button>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="bg-light">
                         <td>8</td>
                         <td>Shorts Grey</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                                <Button variant='light' className='btn-sm'>
-                                <i className='fas fa-edit'></i>
-                                </Button>
+                                <button type="button" class="btn btn-default">Edit</button>
                             </LinkContainer>
-
-                            <Button variant='danger' className='btn-sm'>
-                                <i className='fas fa-trash'></i>
-                            </Button>
                         </td>
                     </tr>
                 </tbody>
             </Table>
-            <br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br><br></br>
             
-            <Col className='text-right'>
+            {/* <Col className='text-right'>
                     <Button className='my-3'>
                         <i className='fas fa-plus'></i> Add Product
                     </Button>
-            </Col>
+            </Col> */}
             
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+            
         </div>
     )
 }
