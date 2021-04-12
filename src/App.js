@@ -7,7 +7,6 @@ import MyBag from "./Pages/MyBag";
 import UserProfile from "./Pages/UserProfile";
 import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
-import Admin from "./Pages/Admin/Admin";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
       <Route exact path='/mybag' component={MyBag}/>
       <Route exact path='/userprofile' component={UserProfile}/>
       <Route exact path='/settings' component={Settings}/>
-      <Route exact path='/admin' component={Admin}/>
       <Footer/>
       </BrowserRouter>
     </div>

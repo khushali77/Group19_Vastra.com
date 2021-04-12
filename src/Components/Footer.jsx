@@ -15,12 +15,13 @@ function Footer(){
               <div className="col-xs-6 col-md-3">
                 <h6>Categories</h6>
                 <ul className="footer-links">
+                  {/* Categories section links */}
                   <BrowserRouter>
-                  <li><Link to="http://scanfcode.com/category/c-language/">Men</Link></li>
-                  <li><Link to="http://scanfcode.com/category/front-end-development/">Women</Link></li>
-                  <li><Link to="http://scanfcode.com/category/back-end-development/">Kids</Link></li>
-                  <li><Link to="http://scanfcode.com/category/java-programming-language/">Traditionals</Link></li>
-                  <li><Link to="http://scanfcode.com/category/android/">Western</Link></li>
+                  <li><Link to="/">Men</Link></li>
+                  <li><Link to="/">Women</Link></li>
+                  <li><Link to="/">Kids</Link></li>
+                  <li><Link to="/">Traditionals</Link></li>
+                  <li><Link to="/">Western</Link></li>
                   </BrowserRouter>
                 </ul>
               </div>
@@ -28,20 +29,22 @@ function Footer(){
               <div className="col-xs-6 col-md-3">
                 <h6>Quick Links</h6>
                 <ul className="footer-links">
+                {/* Categories quick links */}
                 <BrowserRouter>
-                  <li><Link to="http://scanfcode.com/about/">About Us</Link></li>
-                  <li><Link to="http://scanfcode.com/contact/">Contact Us</Link></li>
-                  <li><Link to="http://scanfcode.com/contribute-at-scanfcode/">Contribute</Link></li>
-                  <li><Link to="http://scanfcode.com/privacy-policy/">Privacy Policy</Link></li>
-                  <li><Link to="http://scanfcode.com/sitemap/">Sitemap</Link></li>
+                  <li><Link to="/">About Us</Link></li>
+                  <li><Link to="/">Contact Us</Link></li>
+                  <li><Link to="/">Contribute</Link></li>
+                  <li><Link to="/">Privacy Policy</Link></li>
+                  <li><Link to="/">Sitemap</Link></li>
                   </BrowserRouter>
                 </ul>
               </div>
+
             </div>
             <hr/>
           </div>
-          <BrowserRouter>
-          <div className="container">
+          
+          <div className="container"> 
             <div className="row">
               <div className="col-md-8 col-sm-6 col-xs-12">
                 <p className="copyright-text">Copyright &copy; 2021 All Rights Reserved by<Link to="#"> Vastra.com</Link>
@@ -50,15 +53,19 @@ function Footer(){
     
               <div className="col-md-4 col-sm-6 col-xs-12">
                 <ul className="social-icons">
+                  {/* Links to social Media*/}
+                  <BrowserRouter>
                   <li><Link className="facebook" to="#"><i><img alt="facebook" src="https://img.icons8.com/windows/24/000000/facebook-new.png"/></i></Link></li>
                   <li><Link className="twitter" to="#"><i><img alt="twitter" src="https://img.icons8.com/fluent-systems-filled/24/000000/twitter.png"/></i></Link></li>
                   <li><Link className="gmail" to="#"><i><img alt="gmail" src="https://img.icons8.com/fluent-systems-regular/24/000000/gmail.png"/></i></Link></li>
                   <li><Link className="linkedin" to="#"><i><img alt="linkedin" src="https://img.icons8.com/material-rounded/24/000000/linkedin.png"/></i></Link></li>   
+                  </BrowserRouter>
                 </ul>
               </div>
+
             </div>
           </div>
-          </BrowserRouter>
+          
     </footer>
     )
 }
