@@ -61,3 +61,7 @@ body{
     overflow: hidden;
     padding-top: 50%;
 }
+
+.app__personalize{
+    padding-bottom: 50px;
+}

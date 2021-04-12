@@ -4,6 +4,7 @@ import Video2 from "../Components/Video2.mp4";
 import {brands,breakPoints,prod,cat} from "../data";
 import Card1 from "../Components/Card";
 import "../Css/Home.css";
+import { Link } from "react-router-dom";
 
 function Home(){
     return(
@@ -64,8 +65,13 @@ function Home(){
                     </Carousel>
                     </div>
                 </div>
+
+                <div className="app__personalize">
+                    <h2>Wanna Create Your Personlized T-shirts?</h2>
+                    <Link to='/personalized'><h2>Then Let's Head Over</h2></Link>
+                </div>
+
             </div> 
-            
         </div>
     )  
 }
