@@ -7,7 +7,7 @@ import MyBag from "./Pages/MyBag";
 import UserProfile from "./Pages/UserProfile";
 import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
-import Admin from "./Pages/Admin/Admin";
+import Product from "./Pages/product";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Route exact path='/mybag' component={MyBag}/>
       <Route exact path='/userprofile' component={UserProfile}/>
       <Route exact path='/settings' component={Settings}/>
-      <Route exact path='/admin' component={Admin}/>
+      <Route exact path='/product' component={Product}/>
       <Footer/>
       </BrowserRouter>
     </div>
