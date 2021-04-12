@@ -8,7 +8,6 @@ import UserProfile from "./Pages/UserProfile";
 import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
 import Admin from "./Pages/Admin";
-
 function App() {
   return (
     <div className="App">

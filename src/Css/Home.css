@@ -1,0 +1,67 @@
+body{
+    background-color: black !important;
+}
+  
+.app__video{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+  
+.sections{
+    color: white;
+    text-align: center;
+}
+
+.sections h2{
+    font-size: 40px;
+    margin: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.sections h2:first-child{
+    margin-top: 40px;
+}
+
+.sections img{
+    height: 100%;
+    width: 90%;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.sections img:hover{
+    cursor:pointer;
+}
+  
+.brand__car{
+    padding:25px;
+    background-color: #D5D7CC;
+}
+
+.brand__prod{
+    padding:25px;
+    background-color: #F6D5B6;
+}
+
+.brand__cat{
+    padding:25px;
+    background-color: #D5D7CC;
+}
+
+.card{
+    margin:50px 0;
+}
+
+.mycard{
+    height: 250px;
+    overflow: hidden;
+    padding-top: 50%;
+}
+
+.app__personalize{
+    padding-bottom: 50px;
+}
