@@ -1,12 +1,13 @@
 import React from "react";
 import {products} from "./data";
-import s1 from "../assets/shoe_1.jpg"
-import s2 from "../assets/shoe_2.jpg"
-import s3 from "../assets/shoe_3.jpg"
-import s4 from "../assets/shoe_4.jpg"
-import check from "../assets/heart.png"
+import s1 from "../assets/shoe_1.jpg";
+import s2 from "../assets/shoe_2.jpg";
+import s3 from "../assets/shoe_3.jpg";
+import s4 from "../assets/shoe_4.jpg";
+import check from "../assets/heart.png";
 import "../Css/product.css";
-import $ from 'jquery';
+import "../assets/product.js";
+import $ from "jquery";
 function Product(){
     return(
       <div className="App">
@@ -19,31 +20,31 @@ function Product(){
               <div className = "product-imgs">
                   <div className = "img-display">
                       <div className = "img-showcase">
-                      <img src = {s1} alt = "shoe image"/>
-                      <img src = {s2}  alt = "shoe image"/>
-                      <img src = {s3}  alt = "shoe image"/>
-                      <img src = {s4}  alt = "shoe image"/>
+                      <img src = {s1} alt = "shoe1"/>
+                      <img src = {s2}  alt = "shoe2"/>
+                      <img src = {s3}  alt = "shoe3"/>
+                      <img src = {s4}  alt = "shoe4"/>
                     </div>       
                   </div>
                   <div className = "img-select">
                     <div className = "img-item">
                       <a href = "#" data-id = "1">
-                        <img src = {s1}  alt = "shoe image"/>
+                        <img src = {s1}  alt = "shoe1"/>
                       </a>
                     </div>
                     <div className = "img-item">
                       <a href = "#" data-id = "2">
-                        <img src = {s2}  alt = "shoe image"/>
+                        <img src = {s2}  alt = "shoe2"/>
                       </a>
                     </div>
                     <div className = "img-item">
                       <a href = "#" data-id = "3">
-                        <img src = {s3}  alt = "shoe image"/>
+                        <img src = {s3}  alt = "shoe3"/>
                       </a>
                     </div>
                     <div className = "img-item">
                       <a href = "#" data-id = "4">
-                        <img src = {s4}  alt = "shoe image"/>
+                        <img src = {s4}  alt = "shoe4"/>
                       </a>
                     </div>
                   </div>
@@ -139,7 +140,7 @@ function Product(){
             <button type = "button" class = "btn">
                <i class = "fas fa-shopping-cart icn"></i>ADD TO CART
             </button>
-            <button type = "button" class = "btn"><img src = {check}  alt = "checked image"/></button>
+            <button type = "button" class = "btn"><img src = {check}  alt = "checked"/></button>
           </div>
 
           <div class = "social-links">
@@ -220,7 +221,6 @@ function Product(){
   }
 
 export default Product;
-
 const imgs = document.querySelectorAll('.img-select a');
 const imgBtns = [...imgs];
 let imgId = 1;
@@ -249,7 +249,7 @@ tabs.forEach(function(tab, tab_index){
 		tab.classList.add("active");
 
 		tab_wraps.forEach(function(content, content_index){
-			if(content_index == tab_index){
+			if(content_index === tab_index){
 				content.style.display = "block";
 			}
 			else{
@@ -283,5 +283,4 @@ $(document).ready(function() {
 });
 
 window.addEventListener('resize', slideImage);
-
 
