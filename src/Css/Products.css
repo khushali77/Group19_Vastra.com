@@ -1,0 +1,22 @@
+.top__bar{
+    margin: auto;
+    padding-top: 57px;
+    background-color: #F6D5B6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.filter{
+    justify-self: start;
+    margin-left: 30px;
+}
+
+.top__bar p{
+    justify-self: center;
+    font-size: 18px;
+}
+
+.sort{
+    justify-self: end;
+    margin-right: 30px;
+}
