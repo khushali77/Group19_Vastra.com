@@ -9,7 +9,7 @@ function ProductList() {
   
     
     return (
-        <div class="bg-light">
+        <div className="ProductList1 bg-light" >
         <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             <Row className='align-items-center'>
                 <Col>
@@ -23,7 +23,7 @@ function ProductList() {
             </Row>
             
             <br></br><br></br>
-            <Table striped bordered hover responsive className="table-sm">
+            <Table bordered hover responsive className="table-sm">
                 <thead>
                     <tr>
                     <th>Product ID</th>
