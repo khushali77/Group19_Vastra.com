@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import Video2 from "../Components/Video2.mp4";
+import Video2 from "../Assets/Video2.mp4";
 import {brands,breakPoints,prod,cat} from "../data";
 import Card1 from "../Components/Card";
 import "../Css/Home.css";

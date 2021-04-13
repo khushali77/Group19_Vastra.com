@@ -4,7 +4,7 @@ import "../Css/Header.css";
 
 function Header(){
     return(
-        <div>
+        <div className="header">
             {/* Navbar using Bootstrap */}
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
             <Navbar.Brand href="/" className="app__brand">Vastra.com</Navbar.Brand>
