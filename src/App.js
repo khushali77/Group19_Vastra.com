@@ -7,11 +7,21 @@ import MyBag from "./Pages/MyBag";
 import UserProfile from "./Pages/UserProfile";
 import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
-import Login, { LoginForm } from "../src/Components/accountBox/loginForm";
-import Login2, { LoginForm2 } from "../src/Components/accountBox/loginForm2";
-import Signup, { SignupForm } from "../src/Components/accountBox/signupForm";
-import Signup2, { SignupForm2 } from "../src/Components/accountBox/signupForm2";
-
+import { LoginForm } from "../src/Components/accountBox/loginForm";
+import { LoginForm2 } from "../src/Components/accountBox/loginForm2";
+import { SignupForm } from "../src/Components/accountBox/signupForm";
+import { SignupForm2 } from "../src/Components/accountBox/signupForm2";
+import {AccountBox} from "../src/Components/accountBox/index";
+import { AccountContext } from "../src/Components/accountBox/accountContext";
+import {
+  BoldLink,
+  BoxContainer,
+  FormContainer,
+  Input,
+  MutedLink,
+  SubmitButton,
+} from "../src/Components/accountBox/common";
+import { Marginer } from "../src/Components/marginer/index";
 function App() {
   return (
     <div className="App">
