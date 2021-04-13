@@ -124,7 +124,7 @@ export function AccountBox(props) {
           
           {active === "signin" && (
             <HeaderContainer>
-              <SmallText>Login as user</SmallText>
+              <SmallText>Login as customer</SmallText>
             </HeaderContainer>
           )}
           {active === "signup" && (
@@ -134,12 +134,12 @@ export function AccountBox(props) {
           )}
           {active === "signup2" && (
             <HeaderContainer>
-              <SmallText>Register as customer</SmallText>
+              <SmallText>Register as retailer</SmallText>
             </HeaderContainer>
           )}
           {active === "signin2" && (
             <HeaderContainer>
-              <SmallText>Register as retailer</SmallText>
+              <SmallText>Login as retailer</SmallText>
             </HeaderContainer>
           )}
         </TopContainer>

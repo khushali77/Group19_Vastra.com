@@ -7,21 +7,27 @@ import MyBag from "./Pages/MyBag";
 import UserProfile from "./Pages/UserProfile";
 import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
-import { LoginForm } from "../src/Components/accountBox/loginForm";
-import { LoginForm2 } from "../src/Components/accountBox/loginForm2";
-import { SignupForm } from "../src/Components/accountBox/signupForm";
-import { SignupForm2 } from "../src/Components/accountBox/signupForm2";
-import {AccountBox} from "../src/Components/accountBox/index";
-import { AccountContext } from "../src/Components/accountBox/accountContext";
-import {
-  BoldLink,
-  BoxContainer,
-  FormContainer,
-  Input,
-  MutedLink,
-  SubmitButton,
-} from "../src/Components/accountBox/common";
-import { Marginer } from "../src/Components/marginer/index";
+import styled from "styled-components";
+import { AccountBox } from "./Components/accountBox";
+
+const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+function logins() {
+  return (
+    
+    <AppContainer>
+           <AccountBox />
+    </AppContainer>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -32,10 +38,7 @@ function App() {
       <Route exact path='/mybag' component={MyBag}/>
       <Route exact path='/userprofile' component={UserProfile}/>
       <Route exact path='/settings' component={Settings}/>
-      <Route exact path='/userlogin' component={LoginForm}/>
-      <Route exact path='/retailerlogin' component={LoginForm2}/>
-      <Route exact path='/usersignup' component={SignupForm}/>
-      <Route exact path='/retailersignup' component={SignupForm2}/>
+      <Route exact path='/userlogin' component={logins}/>
       <Footer/>
       </BrowserRouter>
     </div>
