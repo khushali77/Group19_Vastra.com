@@ -3,16 +3,16 @@ import styled from "styled-components";
 export const BoxContainer = styled.div`
   width: 80%;
   align: center;
-  margin-bottom: 2px;
-  padding-left: 100px;
+  margin-bottom: 20px;
+  padding-left: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   border-left: 10px;
 `;
 
 export const FormContainer = styled.form`
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ export const Input = styled.input`
   padding: 0px 20px;
   padding-bottom: 0px;
   border-bottom: 1px solid rgba(200, 200, 200, 1);
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   transition: all 200ms ease-in-out;
   font-size: 12px;
   background-color: #C4C4C4;
@@ -82,6 +82,7 @@ export const SubmitButton = styled.button`
   cursor: pointer;
   transition: all, 240ms ease-in-out;
   background: #f6d5b6;
+  margin-bottom: 20px;
   background: linear-gradient(
     58deg,
     rgb(134,170,171) 20%,

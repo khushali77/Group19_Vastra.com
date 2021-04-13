@@ -8,7 +8,8 @@ import { SignupForm } from "./signupForm";
 import {SignupForm2} from "./signupForm2";
 
 const BoxContainer = styled.div`
-  width: 50%;
+margin-top: 5%;
+  width: 40%;
   min-height: 550px;
   display: flex;
   flex-direction: column;
@@ -21,11 +22,11 @@ const BoxContainer = styled.div`
 
 const TopContainer = styled.div`
   width: 100%;
-  height: 250px;
+  
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 1.8em;
+  padding-top: 100px;
   padding-bottom: 2em;
 `;
 
@@ -46,21 +47,21 @@ const HeaderContainer = styled.div`
 `;
 
 const HeaderText = styled.text`
-  align: left;
-  font-family: Cedarville Cursive;
-  font-style: normal;
-  font-weight: 700;
+  align: center;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 30px;
   color: #121212;
-  font-size: 17px;
+  margin-left: 35%;
 `;
 
 const SmallText = styled.h5`
-  color: black;
-  font-weight: 700;
-  font-size: 30px;
-  z-index: 10;
+  color: #8DAAA6;
+  font-weight: 10;
+  font-size: 17px;
+  z-index: 100;
   margin-left: 35%;
   margin-top: 2%;
+  margin-bottom: 20px;
 `;
 
 const InnerContainer = styled.div`
@@ -124,21 +125,25 @@ export function AccountBox(props) {
           
           {active === "signin" && (
             <HeaderContainer>
+              <HeaderText>Vastra.com</HeaderText>
               <SmallText>Login as customer</SmallText>
             </HeaderContainer>
           )}
           {active === "signup" && (
             <HeaderContainer>
+              <HeaderText>Vastra.com</HeaderText>
               <SmallText>Register as customer</SmallText>
             </HeaderContainer>
           )}
           {active === "signup2" && (
             <HeaderContainer>
+              <HeaderText>Vastra.com</HeaderText>
               <SmallText>Register as retailer</SmallText>
             </HeaderContainer>
           )}
           {active === "signin2" && (
             <HeaderContainer>
+              <HeaderText>Vastra.com</HeaderText>
               <SmallText>Login as retailer</SmallText>
             </HeaderContainer>
           )}
