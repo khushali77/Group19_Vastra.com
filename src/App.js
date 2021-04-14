@@ -8,14 +8,8 @@ import UserProfile from "./Pages/UserProfile";
 import Products from "./Pages/Products";
 import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
-<<<<<<< HEAD
-
-import logins from "./Components/login"
-
-
-=======
+import logins from "./Components/login";
 import Admin from "./Pages/Admin";
->>>>>>> b215be4b7921456cc915e10bea14695e9136f31b
 function App() {
   return (
     <div className="App">
