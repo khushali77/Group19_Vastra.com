@@ -9,7 +9,8 @@ import {SignupForm2} from "./signupForm2";
 
 const BoxContainer = styled.div`
 margin-top: 5%;
-  width: 40%;
+margin-bottom: 5%;
+  width: 37%;
   min-height: 550px;
   display: flex;
   flex-direction: column;

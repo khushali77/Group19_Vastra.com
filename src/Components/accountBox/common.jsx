@@ -13,7 +13,7 @@ export const BoxContainer = styled.div`
 
 export const FormContainer = styled.form`
 
-  width: 100%;
+  width: 120%;
   display: flex;
   flex-direction: column;
   padding: 0px;

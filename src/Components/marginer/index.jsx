@@ -5,6 +5,7 @@ const HorizontalMargin = styled.span`
   display: flex;
   width: ${({ margin }) =>
     typeof margin === "string" ? margin : `${margin}px`};
+    
 `;
 
 const VerticalMargin = styled.span`
