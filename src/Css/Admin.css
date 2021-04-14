@@ -1,0 +1,34 @@
+.admin{
+    margin-top:80px;
+    background-color:#FFFFFF;
+}
+.button-admin{
+    background-color:#E5E5E5;
+    border: none;
+    color: black;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.table-bordered{
+   
+    text-align: center;
+}
+.table td{
+    vertical-align: middle;
+}
+.table th{
+    vertical-align: middle;
+}
+
+.container-fluid{
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
