@@ -5,28 +5,12 @@ import Home from "./Pages/Home";
 import Favourites from "./Pages/Favourites";
 import MyBag from "./Pages/MyBag";
 import UserProfile from "./Pages/UserProfile";
+import Products from "./Pages/Products";
 import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
-import styled from "styled-components";
-import { AccountBox } from "./Components/accountBox";
 
-const AppContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
+import logins from "./Components/login"
 
-function logins() {
-  return (
-    
-    <AppContainer>
-           <AccountBox />
-    </AppContainer>
-  );
-}
 
 function App() {
   return (
@@ -39,6 +23,7 @@ function App() {
       <Route exact path='/userprofile' component={UserProfile}/>
       <Route exact path='/settings' component={Settings}/>
       <Route exact path='/userlogin' component={logins}/>
+      <Route exact path='/products'component={Products}/>
       <Footer/>
       </BrowserRouter>
     </div>
