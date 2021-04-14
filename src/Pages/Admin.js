@@ -8,7 +8,7 @@ const Admin = () => {
 
     return (
         <div className="admin container-fluid">
-         <table class="table table-bordered">
+         <table class="table table-bordered" >
                 <thead>
                     <tr>
                     <th scope="col">Retailer Id</th>
@@ -22,7 +22,7 @@ const Admin = () => {
                             retailers.map((user,index)=>(
                                 <tr>
                                     <th scope="row">{index+1}</th>
-                                    <td>{user.name}</td>
+                                    <td className="tdCenter">{user.name}</td>
                                     <td>
                                         <button class=" mr-2 btn button-admin ">View</button>
                                     </td>

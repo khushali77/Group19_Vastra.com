@@ -14,12 +14,21 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+
 .table-bordered{
+   
     text-align: center;
 }
+.table td{
+    vertical-align: middle;
+}
+.table th{
+    vertical-align: middle;
+}
+
 .container-fluid{
-    margin-top:8%;
-    margin-bottom:5%;
+    padding-top:5%;
+    padding-bottom:5%;
     padding-left: 10%;
     padding-right: 10%;
 }
