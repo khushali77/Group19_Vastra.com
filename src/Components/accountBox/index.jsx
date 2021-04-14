@@ -73,7 +73,6 @@ const expandingTransition = {
 };
 
 export function AccountBox(props) {
-  const [setExpanded] = useState(false);
   const [active, setActive] = useState("signin");
 
  
