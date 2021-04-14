@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { LoginForm } from "./loginForm";
 import { LoginForm2} from"./loginForm2";
-import { motion } from "framer-motion";
 import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
 import {SignupForm2} from "./signupForm2";
@@ -74,7 +73,7 @@ const expandingTransition = {
 };
 
 export function AccountBox(props) {
-  const [isExpanded, setExpanded] = useState(false);
+  const [setExpanded] = useState(false);
   const [active, setActive] = useState("signin");
 
   const playExpandingAnimation = () => {
