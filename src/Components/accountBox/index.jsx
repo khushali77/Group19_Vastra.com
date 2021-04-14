@@ -19,6 +19,9 @@ margin-bottom: 5%;
   box-shadow: 0 0 2px rgba(15, 15, 15, 0.28);
   position: relative;
   overflow: hidden;
+  @media(max-width:767px){
+    width:100%;
+  }
 `;
 
 const TopContainer = styled.div`

@@ -19,13 +19,9 @@ export function LoginForm2(props) {
       <MutedLink >
           Username{" "}
           </MutedLink>
-        <Input type="text" placeholder="Full Name" />
-        <MutedLink>
-          Enter email id:{" "}
-          </MutedLink>
-        <Input type="email" placeholder="Email" />
+        <Input type="text" placeholder="Enter username" />
         <MutedLink >
-          Set password{" "}
+          Password:{" "}
           </MutedLink>
         <Input type="password" placeholder="Password" />
         
