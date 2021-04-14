@@ -17,11 +17,11 @@ export function LoginForm(props) {
   return (
     <BoxContainer>
       <FormContainer>
-      <MutedLink href="#">
+      <MutedLink >
           Username{" "}
           </MutedLink>
         <Input type="Username" placeholder="Username" />
-        <MutedLink href="#">
+        <MutedLink >
           Enter password{" "}
           </MutedLink>
         <Input type="password" placeholder="Password" />
@@ -29,7 +29,7 @@ export function LoginForm(props) {
       <Marginer direction="vertical" margin={10} />
       <SubmitButton type="submit">Login</SubmitButton>
       <Marginer direction="vertical" margin="1em" />
-      <MutedLink href="#">
+      <MutedLink >
         Don't have an account?{" "}
         <BoldLink href="#" onClick={switchToSignup}>
           Register

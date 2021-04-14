@@ -4,7 +4,7 @@ export const BoxContainer = styled.div`
   width: 80%;
   align: center;
   margin-bottom: 20px;
-  padding-left: 10%;
+  padding-left: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,13 +27,7 @@ export const MutedLink = styled.a`
   padding-bottom: 5px;
   font-weight: 500;
   text-decoration: none;
-  &:hover {
-    filter: brightness(1.15);
-    background: linear-gradient(
-      58deg,
-      rgb(134,170,171) 80%,
-      rgb(156,195,200) 100%,
-    );
+  
 `;
 
 export const BoldLink = styled.a`

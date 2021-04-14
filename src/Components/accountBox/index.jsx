@@ -30,15 +30,6 @@ const TopContainer = styled.div`
   padding-bottom: 2em;
 `;
 
-const BackDrop = styled(motion.div)`
-background-image: "/capsule-wardrobe.jpg";
-position: fixed;
-min-width: 100%;
-min-height: 100%;
-background-size: cover;
-background-position: center;
-  );
-`;
 
 const HeaderContainer = styled.div`
   width: 100%;

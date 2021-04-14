@@ -16,15 +16,15 @@ export function LoginForm2(props) {
   return (
     <BoxContainer>
       <FormContainer>
-      <MutedLink href="#">
+      <MutedLink >
           Username{" "}
           </MutedLink>
         <Input type="text" placeholder="Full Name" />
-        <MutedLink href="#">
+        <MutedLink>
           Enter email id:{" "}
           </MutedLink>
         <Input type="email" placeholder="Email" />
-        <MutedLink href="#">
+        <MutedLink >
           Set password{" "}
           </MutedLink>
         <Input type="password" placeholder="Password" />
@@ -33,7 +33,7 @@ export function LoginForm2(props) {
       <Marginer direction="vertical" margin={10} />
       <SubmitButton type="submit">Register</SubmitButton>
       <Marginer direction="vertical" margin="1em" />
-      <MutedLink href="#">
+      <MutedLink >
         Don't have an account?
         <BoldLink href="#" onClick={switchToSignup2}>
           Register

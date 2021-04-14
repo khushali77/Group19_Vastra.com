@@ -16,19 +16,19 @@ export function SignupForm(props) {
   return (
     <BoxContainer>
       <FormContainer>
-      <MutedLink href="#">
+      <MutedLink >
           Username{" "}
           </MutedLink>
         <Input type="text" placeholder="Full Name" />
-        <MutedLink href="#">
+        <MutedLink >
           Enter email id:{" "}
           </MutedLink>
         <Input type="email" placeholder="Email" />
-        <MutedLink href="#">
+        <MutedLink >
           Set password{" "}
           </MutedLink>
         <Input type="password" placeholder="Password" />
-        <MutedLink href="#">
+        <MutedLink >
           Confirm password{" "}
           </MutedLink>
         <Input type="password" placeholder="Confirm Password" />
@@ -36,7 +36,7 @@ export function SignupForm(props) {
       <Marginer direction="vertical" margin={10} />
       <SubmitButton type="submit">Register</SubmitButton>
       <Marginer direction="vertical" margin="1em" />
-      <MutedLink href="#">
+      <MutedLink >
         Already have an account?
         <BoldLink href="#" onClick={switchToSignin}>
           Login

@@ -16,23 +16,23 @@ export function SignupForm2(props) {
   return (
     <BoxContainer>
       <FormContainer>
-      <MutedLink href="#">
+      <MutedLink >
           Retail Name:{" "}
           </MutedLink>
         <Input type="text" placeholder="Retail Name" />
-        <MutedLink href="#">
+        <MutedLink >
           Email address{" "}
           </MutedLink>
         <Input type="email" placeholder="Email" />
-        <MutedLink href="#">
+        <MutedLink >
           Set Password:{" "}
           </MutedLink>
           <Input type="password" placeholder="Password" />
-          <MutedLink href="#">
+          <MutedLink >
           Phone number:{" "}
           </MutedLink>
            <Input type="text" placeholder="Phone number" />
-           <MutedLink href="#">
+           <MutedLink >
           Elaborate request(Mention what products you sell){" "}
           </MutedLink>
           <Input type="text" placeholder="Elaborate request" />
