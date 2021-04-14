@@ -1,0 +1,61 @@
+.mybag{
+    margin-top: 65px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.mybag__area{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.cart__details{
+    justify-self: end;
+    height: 300px;
+    background-color: #F6D5B6;
+}
+
+.peritem{
+    border-radius: 10px;
+    margin-bottom: 32px;
+    padding: 3%;
+    background-color: #D5D7CC;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    font-size: 18px;
+}
+
+.peritem img{
+    height: 180px;
+    width: 200px;
+}
+
+.cards li{
+    list-style: none;
+}
+
+.peritem a{
+    text-decoration: none;
+}
+  
+.peritem__details{
+    margin-left: 50px;
+}
+
+.qty{
+    display: inline;
+}
+
+.qty__input{
+    width: 40px;
+    height: 30px;
+    border: none;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.butn{
+    margin-top: 20px;
+}
