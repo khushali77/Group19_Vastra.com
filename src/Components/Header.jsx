@@ -4,7 +4,8 @@ import "../Css/Header.css";
 
 function Header(){
     return(
-        <div>
+        <div className="header">
+            {/* Navbar using Bootstrap */}
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
             <Navbar.Brand href="/" className="app__brand">Vastra.com</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -12,7 +13,8 @@ function Header(){
                 <Nav className="mr-auto">
                 </Nav>
                 <Nav className="app__navbar__right">
-                <NavDropdown title="User   " id="collasible-nav-dropdown">
+                {/* Navbar Dropdown section*/}
+                <NavDropdown title="User  " id="collasible-nav-dropdown">
                     <NavDropdown.Item href="myprofile">My Profile</NavDropdown.Item>
                     <NavDropdown.Item href="pastorders">Past Orders</NavDropdown.Item>
                     <NavDropdown.Item href="settings">Settings</NavDropdown.Item>

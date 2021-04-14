@@ -1,12 +1,12 @@
 .app__brand{
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 25px;
-    margin-left: 20px;
-  }
-  
-  .app__navbar__right{
-    position:absolute;
-    right:10px;
-    margin-right: 20px;
-    font-size: 18px;
-  }
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.app__navbar__right{
+  position:absolute; 
+  right:0%;
+  margin-right: 20px;
+  font-size: 18px;
+}
