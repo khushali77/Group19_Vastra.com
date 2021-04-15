@@ -62,10 +62,6 @@ export const prod = [
         "price":"125"
     },
     {
-        "name":"Jackets",
-        "url":"https://i.pinimg.com/236x/f4/a5/03/f4a503dfe914d407cddc157221e16800.jpg"
-    },
-    {
         "id":"3",
         "name":"Jackets",
         "url":"https://i.pinimg.com/236x/f4/a5/03/f4a503dfe914d407cddc157221e16800.jpg",
@@ -115,14 +111,3 @@ export const cat = [
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk2T-xQojp0814PEvPeRygP-GlMXawz40dIA&usqp=CAU"
     }
 ]
-export const products=[
-    {
-      "title":"Nike Shoes",
-      "rating":"4.7 (21)",
-      "visit":"Visit Nike Store",
-      "Oldprice":"$257.00",
-      "Newprice":"$249.00 (5%)",
-      "prodetail":"Lorem unde repudiandae voluptas temporibus,  culpa maiores. Dicta, quod neque. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa! Lorem unde repudiandae voluptas temporibus,  culpa maiores. Dicta, quod neque. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!",
-    }
-  ]
-

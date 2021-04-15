@@ -15,7 +15,6 @@ function Header(){
                 <Nav className="app__navbar__right">
                 {/* Navbar Dropdown section*/}
                 <NavDropdown title="User  " id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="myprofile">My Profile</NavDropdown.Item>
                     <NavDropdown.Item href="userprofile">My Profile</NavDropdown.Item>
                     <NavDropdown.Item href="settings">Settings</NavDropdown.Item>
                     <NavDropdown.Divider />

@@ -29,7 +29,6 @@ function Home(){
                         {cat.map((photo)=>{
                             return( 
                             <div>
-                                <Card1 img={photo.url} name={photo.name}/>
                                 <Link to='/products'><Card1 img={photo.url} name={photo.name}/></Link>
                             </div>)
                             })}
@@ -45,7 +44,6 @@ function Home(){
                     {prod.map((photo)=>{
                         return( 
                         <div>
-                            <Card1 img={photo.url} name={photo.name}/>
                             <Link to='/products'><Card1 img={photo.url} name={photo.name}/></Link>
                         </div>)
                         })}
@@ -61,7 +59,6 @@ function Home(){
                     {brands.map((photo)=>{
                         return( 
                         <div>
-                            <Card1 img={photo.url} name={photo.name}/>
                             <Link to='/products'><Card1 img={photo.url} name={photo.name}/></Link>
                         </div>)
                         })}
