@@ -4,3 +4,27 @@
   min-height: 100%;
   background-size:cover;
 }
+
+.payment{
+  margin-top: 150px;
+  display: grid;
+}
+
+.payment button{
+  margin:auto;
+  margin-bottom: 150px;
+}
+
+.paypal{
+  display: grid;
+}
+
+.paypalb{
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+.paypage{
+  text-align: center;
+}
+

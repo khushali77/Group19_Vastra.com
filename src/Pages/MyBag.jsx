@@ -50,7 +50,11 @@ function MyBag(props){
                         <h3 className="cost__total">₹ 3506.00</h3>
                     </div>
                     <div className="checkout__btn">
-                        <Button variant="custom">Proceed to Checkout</Button>
+                        <Button variant="custom" onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href='/pay';
+                            }}>
+                            Proceed to Checkout</Button>
                     </div>
                 </div>
             </div>
