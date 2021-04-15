@@ -120,13 +120,6 @@ export const products=[
       "title":"Nike Shoes",
       "rating":"4.7 (21)",
       "visit":"Visit Nike Store",
-      "src":[
-        "../Assets/shoe_1.jpg",
-        "/images/shoe_2.jpg",
-        "/images/shoe_3.jpg",
-        "/images/shoe_4.jpg",
-        "/images/heart.png"
-      ],
       "Oldprice":"$257.00",
       "Newprice":"$249.00 (5%)",
       "prodetail":"Lorem unde repudiandae voluptas temporibus,  culpa maiores. Dicta, quod neque. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa! Lorem unde repudiandae voluptas temporibus,  culpa maiores. Dicta, quod neque. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!",

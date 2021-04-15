@@ -48,16 +48,11 @@ function Product_indi(){
                 <div className = "vertical"></div>
                 <div className = "product-content">
           <div className = "product-rating">
-            <i className = "fas fa-star"></i>
-            <i className = "fas fa-star"></i>
-            <i className = "fas fa-star"></i>
-            <i className = "fas fa-star"></i>
-            <i className = "fas fa-star-half-alt"></i>
-            <span>{item.rating}</span>
+            <span>Rating - {item.rating}</span>
           </div>
           <h2 className = "product-title">{item.title}</h2>
-          <Link to = "#" class = "product-link"/>{item.visit}
-          <div class = "product-detail">
+          <Link to = "#" className = "product-link">{item.visit}</Link>
+          <div className = "product-detail">
             <p>{item.prodetail}</p>
           </div>
 
