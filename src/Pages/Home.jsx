@@ -1,9 +1,10 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import Video2 from "../Components/Video2.mp4";
+import Video2 from "../Assets/Video2.mp4";
 import {brands,breakPoints,prod,cat} from "../data";
 import Card1 from "../Components/Card";
 import "../Css/Home.css";
+import { Link } from "react-router-dom";
 
 function Home(){
     return(
@@ -28,7 +29,7 @@ function Home(){
                         {cat.map((photo)=>{
                             return( 
                             <div>
-                                <Card1 img={photo.url} name={photo.name}/>
+                                <Link to='/products'><Card1 img={photo.url} name={photo.name}/></Link>
                             </div>)
                             })}
                         </Carousel>
@@ -43,7 +44,7 @@ function Home(){
                     {prod.map((photo)=>{
                         return( 
                         <div>
-                            <Card1 img={photo.url} name={photo.name}/>
+                            <Link to='/products'><Card1 img={photo.url} name={photo.name}/></Link>
                         </div>)
                         })}
                     </Carousel>
@@ -58,14 +59,19 @@ function Home(){
                     {brands.map((photo)=>{
                         return( 
                         <div>
-                            <Card1 img={photo.url} name={photo.name}/>
+                            <Link to='/products'><Card1 img={photo.url} name={photo.name}/></Link>
                         </div>)
                         })}
                     </Carousel>
                     </div>
                 </div>
+
+                <div className="app__personalize">
+                    <h2>Wanna Create Your Personlized T-shirts?</h2>
+                    <Link to='https://www.customily.com/tshirt-design'><h2>Then Let's Head Over</h2></Link>
+                </div>
+
             </div> 
-            
         </div>
     )  
 }

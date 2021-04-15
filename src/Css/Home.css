@@ -1,4 +1,4 @@
-body{
+.app__home{
     background-color: black !important;
 }
   
@@ -60,4 +60,8 @@ body{
     height: 250px;
     overflow: hidden;
     padding-top: 50%;
+}
+
+.app__personalize{
+    padding-bottom: 50px;
 }
