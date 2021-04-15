@@ -52,7 +52,7 @@ function MyBag(props){
                     <div className="checkout__btn">
                         <Button variant="custom" onClick={(e) => {
                             e.preventDefault();
-                            window.location.href='/pay';
+                            window.location.href='/payment';
                             }}>
                             Proceed to Checkout</Button>
                     </div>
