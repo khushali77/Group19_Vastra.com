@@ -1,0 +1,6 @@
+.backgroundlogin {
+  background-image: url(../Components/accountBox/capsule-wardrobe.jpg);
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+}

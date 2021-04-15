@@ -8,7 +8,8 @@ import UserProfile from "./Pages/UserProfile";
 import Products from "./Pages/Products";
 import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
-
+import logins from "./Components/login";
+import Admin from "./Pages/Admin";
 function App() {
   return (
     <div className="App">
@@ -19,7 +20,9 @@ function App() {
       <Route exact path='/mycart' component={MyBag}/>
       <Route exact path='/userprofile' component={UserProfile}/>
       <Route exact path='/settings' component={Settings}/>
+      <Route exact path='/userlogin' component={logins}/>
       <Route exact path='/products'component={Products}/>
+      <Route exact path='/admin'component={Admin}/>
       <Footer/>
       </BrowserRouter>
     </div>
