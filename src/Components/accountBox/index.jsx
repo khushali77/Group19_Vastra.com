@@ -67,8 +67,6 @@ const InnerContainer = styled.div`
 
 export function AccountBox(props) {
   const [active, setActive] = useState("signin");
-
- 
   const switchToSignup = () => {
     setTimeout(() => {
       setActive("signup");
@@ -90,8 +88,9 @@ export function AccountBox(props) {
       setActive("signup2");
     }, 400);
   };
+ 
 
-  const contextValue = { switchToSignup, switchToSignin, switchToSignin2, switchToSignup2 };
+  const contextValue = { switchToSignup, switchToSignin, switchToSignin2, switchToSignup2, };
 
   return (
     <AccountContext.Provider value={contextValue}>
@@ -123,12 +122,14 @@ export function AccountBox(props) {
               <SmallText>Login as retailer</SmallText>
             </HeaderContainer>
           )}
+          
         </TopContainer>
         <InnerContainer>
           {active === "signin" && <LoginForm />}
           {active === "signup" && <SignupForm />}
           {active=== 'signin2' && <LoginForm2 />}
           {active === "signup2" && <SignupForm2 />}
+          
         </InnerContainer>
       </BoxContainer>
     </AccountContext.Provider>
