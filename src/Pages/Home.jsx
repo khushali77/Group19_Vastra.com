@@ -68,7 +68,7 @@ function Home(){
 
                 <div className="app__personalize">
                     <h2>Wanna Create Your Personlized T-shirts?</h2>
-                    <Link to='/personalized'><h2>Then Let's Head Over</h2></Link>
+                    <Link to='https://www.customily.com/tshirt-design'><h2>Then Let's Head Over</h2></Link>
                 </div>
 
             </div> 
