@@ -9,17 +9,19 @@ function ProductList() {
   
     
     return (
-        <div className="ProductList1 bg-light" >
+        <div className="ProductList1 bg-light">
         <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             <Row className='align-items-center'>
                 <Col>
                     <h1>Product List</h1>
                 </Col>
+                <LinkContainer to='/AddItem'>
                 <Col className='text-right'>
                     <Button className='my-3'>
                         <i className='fas fa-plus'></i> Add Product
                     </Button>
                 </Col>
+                </LinkContainer>
             </Row>
             
             <br></br><br></br>
@@ -110,12 +112,7 @@ function ProductList() {
                 </tbody>
             </Table>
             <br></br><br></br><br></br><br></br><br></br>
-            
-            {/* <Col className='text-right'>
-                    <Button className='my-3'>
-                        <i className='fas fa-plus'></i> Add Product
-                    </Button>
-            </Col> */}
+
             
             
         </div>

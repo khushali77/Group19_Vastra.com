@@ -8,7 +8,8 @@ import MyBag from "./Pages/MyBag";
 import UserProfile from "./Pages/UserProfile";
 import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
-import Retailer from "./Pages/Retailer"
+import Retailer from "./Pages/Retailer";
+import AddItem from "./Pages/AddItem";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       <Route exact path='/settings' component={Settings}/>
       <Container>
       <Route exact path='/retailer' component={Retailer} />
+      </Container>
+      <Container>
+      <Route exact path='/additem' component={AddItem} />
       </Container>
       <Footer/>
       </BrowserRouter>
