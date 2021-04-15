@@ -56,70 +56,23 @@ function Product_indi(){
             <i className = "fas fa-star"></i>
             <i className = "fas fa-star"></i>
             <i className = "fas fa-star-half-alt"></i>
-            <span>4.7(21)</span>
+            <span>{item.rating}</span>
           </div>
           <h2 className = "product-title">{item.title}</h2>
-          <a href = "#" class = "product-link">visit nike store</a>
+          <a href = "#" class = "product-link">{item.visit}</a>
           <div class = "product-detail">
-            <p>Lorem unde repudiandae voluptas temporibus,  culpa maiores. Dicta, quod neque.
-				Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
-            
+            <p>{item.prodetail}</p>
           </div>
 
           <div class = "product-price">
-          <p class = "new-price"><span>$249.00 (5%)</span></p>
-            <p class = "last-price">Old Price: <span>$257.00</span></p>
+          <p class = "new-price"><span>{item.Newprice}</span></p>
+            <p class = "last-price">Old Price: <span>{item.Oldprice}</span></p>
             
           </div>
-          <div class="product-color">
-            
           
-            <div class="color-choose">
-            <div>Color -</div>
-              <div class="colr">
-                <input data-image="red" type="radio" id="red" name="color" value="red" checked/>
-                <label for="red"><span></span></label>
-              </div>
-              <div class="colr">
-                <input data-image="blue" type="radio" id="blue" name="color" value="blue"/>
-                <label for="blue"><span></span></label>
-              </div>
-              <div class="colr">
-                <input data-image="black" type="radio" id="black" name="color" value="black"/>
-                <label for="black"><span></span></label>
-              </div>
-              <div class="colr">
-                <input data-image="yellow" type="radio" id="yellow" name="color" value="yellow"/>
-                <label for="yellow"><span></span></label>
-              </div>
-            </div>
-    
-          </div>
 
-          <div class="product-color">
-            
           
-            <div class="color-choose">
-            <div>Size &nbsp;&nbsp;-</div>
-              <div class="colr">
-                <input data-image="red" type="radio" id="red" name="color" value="red" checked/>
-                <label for="red"><span></span></label>
-              </div>
-              <div class="colr">
-                <input data-image="blue" type="radio" id="blue" name="color" value="blue"/>
-                <label for="blue"><span></span></label>
-              </div>
-              <div class="colr">
-                <input data-image="black" type="radio" id="black" name="color" value="black"/>
-                <label for="black"><span></span></label>
-              </div>
-              <div class="colr">
-                <input data-image="yellow" type="radio" id="yellow" name="color" value="yellow"/>
-                <label for="yellow"><span></span></label>
-              </div>
-            </div>
-    
-          </div>
+         
           <div class="contaier">
   
   <div class="quantity">
