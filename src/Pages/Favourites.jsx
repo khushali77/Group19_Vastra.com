@@ -13,7 +13,7 @@ export const Item = (props) =>{
             <p>Product : <Link to="/item">{props.data.name}</Link></p>
             <p>Price : Rs {props.data.price}</p>
             <button type = "button" className = "butn"><i className = "remove"></i>Remove</button>
-            <button type = "button" className = "butn add"><i className = "addtocart"></i>Add to Cart</button>
+            <button type = "button" className = "add"><i className = "addtocart"></i>Add to Cart</button>
         </div>
      </div>
      );
