@@ -1,0 +1,135 @@
+.mybag{
+    margin-top: 65px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mybag__area{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.cart__details{
+    justify-self: end;
+    background-color: #F6D5B6;
+    margin-bottom: 32px;
+}
+
+.peritem{
+    border-radius: 10px;
+    margin-bottom: 32px;
+    padding: 3%;
+    background-color: #D5D7CC;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    font-size: 18px;
+}
+
+.peritem img{
+    height: 200px;
+    width: 200px;
+}
+
+.cards li{
+    list-style: none;
+}
+
+.peritem a{
+    text-decoration: none;
+}
+  
+.peritem__details{
+    margin-left: 50px;
+}
+
+.qty{
+    display: inline;
+}
+
+.qty__input{
+    width: 40px;
+    height: 30px;
+    border: none;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.butn{
+    margin-top: 20px;
+}
+
+.cart__details{
+    padding: 20px;
+    width: 92%;
+    border-radius: 10px;
+    height: 30%;
+}
+
+.cart__details h2,h4{
+    text-align: center;
+}
+
+.user__details{
+    display: grid;
+}
+
+.cost__details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "subtotal s1" "cgst c" "sgst s2" "ship s3";
+    margin-left: 35px;
+}
+
+.subtotal{
+    grid-area: subtotal;
+    align-self: center;
+    margin-top: 26px !important;
+}
+
+.cgst{
+    grid-area: cgst;
+}
+
+.sgst{
+    grid-area: sgst;
+}
+
+.shippingcharges{
+    grid-area: ship;
+}
+
+.cost__ship,.cost__cgst,.cost__sgst,.cost__subtotal{
+    justify-self: end;
+    margin-right: 35px;
+}
+
+.total__sect{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 35px;
+}
+
+.total{
+    justify-self: start;
+    align-self: center;
+}
+
+.cost__total{
+    justify-self: end;
+    margin-right: 35px;
+    margin-top: 0px;
+}
+
+.btn-custom{
+    background-color: #FF9376;
+    font-size: 18px;
+}
+
+.checkout__btn{
+    display: grid;
+    margin-top: 25px;
+    width: 100%;
+}
