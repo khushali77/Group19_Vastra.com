@@ -30,6 +30,7 @@ function Home(){
                             return( 
                             <div>
                                 <Card1 img={photo.url} name={photo.name}/>
+                                <Link to='/products'><Card1 img={photo.url} name={photo.name}/></Link>
                             </div>)
                             })}
                         </Carousel>
@@ -45,6 +46,7 @@ function Home(){
                         return( 
                         <div>
                             <Card1 img={photo.url} name={photo.name}/>
+                            <Link to='/products'><Card1 img={photo.url} name={photo.name}/></Link>
                         </div>)
                         })}
                     </Carousel>
@@ -60,6 +62,7 @@ function Home(){
                         return( 
                         <div>
                             <Card1 img={photo.url} name={photo.name}/>
+                            <Link to='/products'><Card1 img={photo.url} name={photo.name}/></Link>
                         </div>)
                         })}
                     </Carousel>

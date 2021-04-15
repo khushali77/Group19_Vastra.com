@@ -7,6 +7,7 @@ import s2 from "../Assets/shoe_2.jpg";
 import s3 from "../Assets/shoe_3.jpg";
 import s4 from "../Assets/shoe_4.jpg";
 import heart from "../Assets/heart.png";
+import { Link } from 'react-router-dom';
 function Product_indi(){
     return(
       <div className="App">
@@ -19,32 +20,28 @@ function Product_indi(){
               <div className = "product-imgs">
                   <div className = "img-display">
                       <div className = "img-showcase">
-                      <img src = {s1} alt = "shoe image"/>
-                      <img src = {s2}  alt = "shoe image"/>
-                      <img src = {s3}  alt = "shoe image"/>
-                      <img src = {s4}  alt = "shoe image"/>
+                      <img src = {s1} alt = "shoe"/>
+                      <img src = {s2}  alt = "shoe1"/>
+                      <img src = {s3}  alt = "shoe2"/>
+                      <img src = {s4}  alt = "shoe3"/>
                     </div>       
                   </div>
                   <div className = "img-select">
                     <div className = "img-item">
-                      <a href = "#" data-id = "1">
-                        <img src = {s1}  alt = "shoe image"/>
-                      </a>
+                      <Link to href = "#" data-id = "1"/>
+                        <img src = {s1}  alt = "shoe1"/>
                     </div>
                     <div className = "img-item">
-                      <a href = "#" data-id = "2">
-                        <img src = {s2}  alt = "shoe image"/>
-                      </a>
+                      <Link to = "#" data-id = "2"/>
+                        <img src = {s2}  alt = "shoe2"/>
                     </div>
                     <div className = "img-item">
-                      <a href = "#" data-id = "3">
-                        <img src = {s3}  alt = "shoe image"/>
-                      </a>
+                      <Link to = "#" data-id = "3"/>
+                        <img src = {s3}  alt = "shoe3"/>
                     </div>
                     <div className = "img-item">
-                      <a href = "#" data-id = "4">
-                        <img src = {s4}  alt = "shoe image"/>
-                      </a>
+                      <Link to = "#" data-id = "4"/>
+                        <img src = {s4}  alt = "shoe4"/>
                     </div>
                   </div>
                 </div>
@@ -59,110 +56,69 @@ function Product_indi(){
             <span>{item.rating}</span>
           </div>
           <h2 className = "product-title">{item.title}</h2>
-          <a href = "#" class = "product-link">{item.visit}</a>
+          <Link to = "#" class = "product-link"/>{item.visit}
           <div class = "product-detail">
             <p>{item.prodetail}</p>
           </div>
 
           <div class = "product-price">
-          <p class = "new-price"><span>{item.Newprice}</span></p>
-            <p class = "last-price">Old Price: <span>{item.Oldprice}</span></p>
-            
+            <p class = "new-price"><span>{item.Newprice}</span></p>
+            <p class = "last-price">Old Price: <span>{item.Oldprice}</span></p>  
           </div>
-          
-
-          
-         
           <div class="contaier">
-  
-  <div class="quantity">
-    <div>
-      Quantity - 
-      </div>
-    <a href="#" class="quantity__minus"><span>-</span></a>
-    <input name="quantity" type="text" class="quantity__input" value="1"/>
-    <a href="#" class="quantity__plus"><span>+</span></a>
-  </div>
-  
-</div>
-
-          
+            <div class="quantity">
+              <div>
+                  Quantity - 
+              </div>
+              <input name="quantity" type="number" class="quantity__input" value="1"/>
+            </div>
+          </div>
 
           <div class = "purchase-info">
             <button type = "button" class = "btn">
                <i class = "fas fa-shopping-cart icn"></i>ADD TO CART
             </button>
-            <button type = "button" class = "btn"><img src = {heart}  alt = "checked image"/></button>
-          </div>
-
-          <div class = "social-links">
-            <p>Share : </p>
-            <a href = "#">
-              <i class = "fab fa-facebook-f"></i>
-            </a>
-            <a href = "#">
-              <i class = "fab fa-twitter"></i>
-            </a>
-            <a href = "#">
-              <i class = "fab fa-instagram"></i>
-            </a>
-            <a href = "#">
-              <i class = "fab fa-whatsapp"></i>
-            </a>
-            <a href = "#">
-              <i class = "fab fa-pinterest"></i>
-            </a>
+            <button type = "button" class = "btn"><img src = {heart}  alt = "heart"/></button>
           </div>
         </div>
         </div>
         </div>
         <div class="wrapper">
-	<div class="tabs">
-		<ul class="mid">
-			<li class="active">
-				<span class="icon">
-					<i class="far fa-envelope"></i>
-				</span>
-				<span class="text">Discription</span>
-			</li>
-			<li>
-				<span class="icon">
-					<i class="far fa-star"></i>
-				</span>
-				<span class="text">Rating</span>
-			</li>
-		
-		</ul>
-	</div>
+        <div class="tabs">
+          <ul class="mid">
+            <li class="active">
+              <span class="icon">
+                <i class="far fa-envelope"></i>
+              </span>
+              <span class="text">Discription</span>
+            </li>
+            <li>
+              <span class="icon">
+                <i class="far fa-star"></i>
+              </span>
+              <span class="text">Rating</span>
+            </li>
+          
+          </ul>
+        </div>
 
-	<div className="content">
-		<div className="tab_wrap" style={{display: "block"}}>
-			<div class="title"></div>
-			<div class="tab_content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
-			</div>
-		</div>
-		<div class="tab_wrap" style={{display: "block"}}>
-			<div class="title"></div>
-			<div class="tab_content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
-			</div>
-		</div>
-		
-	</div>
-</div>
-
-        
-        
-      
-
-      
-    
-        
-            
-            
+        <div className="content">
+          <div className="tab_wrap" style={{display: "block"}}>
+            <div class="title"></div>
+            <div class="tab_content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
+            </div>
+          </div>
+          <div class="tab_wrap" style={{display: "block"}}>
+            <div class="title"></div>
+            <div class="tab_content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
+            </div>
+          </div>
+        </div>
+</div>           
       </div>
         </div>
         ))

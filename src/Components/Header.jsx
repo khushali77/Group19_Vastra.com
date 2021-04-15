@@ -16,6 +16,7 @@ function Header(){
                 {/* Navbar Dropdown section*/}
                 <NavDropdown title="User  " id="collasible-nav-dropdown">
                     <NavDropdown.Item href="myprofile">My Profile</NavDropdown.Item>
+                    <NavDropdown.Item href="userprofile">My Profile</NavDropdown.Item>
                     <NavDropdown.Item href="pastorders">Past Orders</NavDropdown.Item>
                     <NavDropdown.Item href="settings">Settings</NavDropdown.Item>
                     <NavDropdown.Divider />
