@@ -17,7 +17,7 @@ function App() {
       <Header/>
       <Route exact path='/' component={Home}/>
       <Route exact path='/fav' component={Favourites}/>
-      <Route exact path='/mybag' component={MyBag}/>
+      <Route exact path='/mycart' component={MyBag}/>
       <Route exact path='/userprofile' component={UserProfile}/>
       <Route exact path='/settings' component={Settings}/>
       <Route exact path='/userlogin' component={logins}/>

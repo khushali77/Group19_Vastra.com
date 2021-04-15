@@ -65,13 +65,6 @@ const InnerContainer = styled.div`
   padding: 0 1.8em;
 `;
 
-
-const expandingTransition = {
-  type: "spring",
-  duration: 2.1,
-  stiffness: 30,
-};
-
 export function AccountBox(props) {
   const [active, setActive] = useState("signin");
 
