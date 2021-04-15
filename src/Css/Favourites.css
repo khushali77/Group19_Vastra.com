@@ -1,0 +1,17 @@
+.favs{
+    margin-top: 65px;
+    margin-left: 20%;
+}
+
+.fav__area{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.butn{
+    width: 50%;
+}
+
+.peritem__details{
+    margin-top: 25px;
+}
