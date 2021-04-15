@@ -10,6 +10,8 @@ import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
 import logins from "./Components/login";
 import Admin from "./Pages/Admin";
+import Payment from "./Pages/Payment";
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +25,7 @@ function App() {
       <Route exact path='/userlogin' component={logins}/>
       <Route exact path='/products'component={Products}/>
       <Route exact path='/admin'component={Admin}/>
+      <Route exact path="/payment" component={Payment}/>
       <Footer/>
       </BrowserRouter>
     </div>
