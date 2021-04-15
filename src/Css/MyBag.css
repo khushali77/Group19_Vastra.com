@@ -1,7 +1,7 @@
 .mybag{
     margin-top: 65px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .mybag__area{
@@ -11,8 +11,8 @@
 
 .cart__details{
     justify-self: end;
-    height: 300px;
     background-color: #F6D5B6;
+    margin-bottom: 32px;
 }
 
 .peritem{
@@ -26,7 +26,7 @@
 }
 
 .peritem img{
-    height: 180px;
+    height: 200px;
     width: 200px;
 }
 
@@ -58,4 +58,78 @@
 
 .butn{
     margin-top: 20px;
+}
+
+.cart__details{
+    padding: 20px;
+    width: 92%;
+    border-radius: 10px;
+    height: 30%;
+}
+
+.cart__details h2,h4{
+    text-align: center;
+}
+
+.user__details{
+    display: grid;
+}
+
+.cost__details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "subtotal s1" "cgst c" "sgst s2" "ship s3";
+    margin-left: 35px;
+}
+
+.subtotal{
+    grid-area: subtotal;
+    align-self: center;
+    margin-top: 26px !important;
+}
+
+.cgst{
+    grid-area: cgst;
+}
+
+.sgst{
+    grid-area: sgst;
+}
+
+.shippingcharges{
+    grid-area: ship;
+}
+
+.cost__ship,.cost__cgst,.cost__sgst,.cost__subtotal{
+    justify-self: end;
+    margin-right: 35px;
+}
+
+.total__sect{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 35px;
+}
+
+.total{
+    justify-self: start;
+    align-self: center;
+}
+
+.cost__total{
+    justify-self: end;
+    margin-right: 35px;
+    margin-top: 0px;
+}
+
+.btn-custom{
+    background-color: #FF9376;
+    font-size: 18px;
+}
+
+.checkout__btn{
+    display: grid;
+    margin-top: 25px;
+    width: 100%;
 }
