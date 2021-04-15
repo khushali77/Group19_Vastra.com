@@ -43,16 +43,6 @@ export const MutedLink = styled.a`
   margin-left: 8%;
 `;
 
-const BoldLink = styled.a`
-  font-size: 15px;
-  color: #d27960;
-  opacity: 80%;
-  font-weight: 500;
-  text-decoration: none;
-  margin: 0 4px;
-  align: left;
-`;
-
 const Input = styled.input`
   width: 60%;
   margin-top: 2%;
