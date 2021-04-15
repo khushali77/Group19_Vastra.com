@@ -10,6 +10,7 @@ import Settings from "./Pages/Settings";
 import Footer from "./Components/Footer";
 import logins from "./Components/login";
 import Admin from "./Pages/Admin";
+import profilepage from "./Components/accountBox/profile";
 function App() {
   return (
     <div className="App">

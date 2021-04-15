@@ -5,7 +5,7 @@ import { LoginForm2} from"./loginForm2";
 import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
 import {SignupForm2} from "./signupForm2";
-
+import UserProfile from "../../Pages/UserProfile";
 const BoxContainer = styled.div`
 margin-top: 5%;
 margin-bottom: 5%;
@@ -65,17 +65,8 @@ const InnerContainer = styled.div`
   padding: 0 1.8em;
 `;
 
-
-const expandingTransition = {
-  type: "spring",
-  duration: 2.1,
-  stiffness: 30,
-};
-
 export function AccountBox(props) {
   const [active, setActive] = useState("signin");
-
- 
   const switchToSignup = () => {
     setTimeout(() => {
       setActive("signup");
@@ -97,8 +88,13 @@ export function AccountBox(props) {
       setActive("signup2");
     }, 400);
   };
+  const switchToProfile = () => {
+    setTimeout(() => {
+      setActive("profilepage");
+    }, 400);
+  };
 
-  const contextValue = { switchToSignup, switchToSignin, switchToSignin2, switchToSignup2 };
+  const contextValue = { switchToSignup, switchToSignin, switchToSignin2, switchToSignup2,switchToProfile };
 
   return (
     <AccountContext.Provider value={contextValue}>
@@ -130,12 +126,19 @@ export function AccountBox(props) {
               <SmallText>Login as retailer</SmallText>
             </HeaderContainer>
           )}
+          {active === "profilepage" && (
+            <HeaderContainer>
+              <HeaderText>Vastra.com</HeaderText>
+              <SmallText>User Profile</SmallText>
+            </HeaderContainer>
+          )}
         </TopContainer>
         <InnerContainer>
           {active === "signin" && <LoginForm />}
           {active === "signup" && <SignupForm />}
           {active=== 'signin2' && <LoginForm2 />}
           {active === "signup2" && <SignupForm2 />}
+          {active === "profilepage" && <UserProfile />}
         </InnerContainer>
       </BoxContainer>
     </AccountContext.Provider>
