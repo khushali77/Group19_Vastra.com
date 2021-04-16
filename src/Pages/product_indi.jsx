@@ -56,42 +56,42 @@ function Product_indi(){
             <p>{item.prodetail}</p>
           </div>
 
-          <div class = "product-price">
-            <p class = "new-price"><span>{item.Newprice}</span></p>
-            <p class = "last-price">Old Price: <span>{item.Oldprice}</span></p>  
+          <div className = "product-price">
+            <p className = "new-price"><span>{item.Newprice}</span></p>
+            <p className = "last-price">Old Price: <span>{item.Oldprice}</span></p>  
           </div>
-          <div class="contaier">
-            <div class="quantity">
+          <div className="contaier">
+            <div className="quantity">
               <div>
                   Quantity - 
               </div>
-              <input name="quantity" type="number" class="quantity__input" value="1"/>
+              <input name="quantity" type="number" className="quantity__input" value="1"/>
             </div>
           </div>
 
-          <div class = "purchase-info">
-            <button type = "button" class = "btn">
-               <i class = "fas fa-shopping-cart icn"></i>ADD TO CART
+          <div className = "purchase-info">
+            <button type = "button" className = "btn">
+               <i className = "fas fa-shopping-cart icn"></i>ADD TO CART
             </button>
-            <button type = "button" class = "btn"><img src = {heart}  alt = "heart"/></button>
+            <button type = "button" className = "btn"><img src = {heart}  alt = "heart"/></button>
           </div>
         </div>
         </div>
         </div>
-        <div class="wrapper">
-        <div class="tabs">
-          <ul class="mid">
-            <li class="active">
-              <span class="icon">
-                <i class="far fa-envelope"></i>
+        <div className="wrapper">
+        <div className="tabs">
+          <ul className="mid">
+            <li className="active">
+              <span className="icon">
+                <i className="far fa-envelope"></i>
               </span>
-              <span class="text">Discription</span>
+              <span className="text">Discription</span>
             </li>
             <li>
-              <span class="icon">
-                <i class="far fa-star"></i>
+              <span className="icon">
+                <i className="far fa-star"></i>
               </span>
-              <span class="text">Rating</span>
+              <span className="text">Rating</span>
             </li>
           
           </ul>
@@ -99,15 +99,15 @@ function Product_indi(){
 
         <div className="content">
           <div className="tab_wrap" style={{display: "block"}}>
-            <div class="title"></div>
-            <div class="tab_content">
+            <div className="title"></div>
+            <div className="tab_content">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
             </div>
           </div>
-          <div class="tab_wrap" style={{display: "block"}}>
-            <div class="title"></div>
-            <div class="tab_content">
+          <div className="tab_wrap" style={{display: "block"}}>
+            <div className="title"></div>
+            <div className="tab_content">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
             </div>

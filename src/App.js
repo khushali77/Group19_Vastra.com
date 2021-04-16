@@ -1,5 +1,6 @@
 import './App.css';
 import './Css/product_indi.css'
+import './Css/about.css';
 import Header from "./Components/Header";
 import {BrowserRouter,Route} from "react-router-dom";
 import Home from "./Pages/Home";
@@ -12,6 +13,7 @@ import Footer from "./Components/Footer";
 import Product_indi from "./Pages/product_indi";
 import logins from "./Components/login";
 import Admin from "./Pages/Admin";
+import About from "./Pages/About";
 function App() {
   return (
     <div className="App">
@@ -27,6 +29,7 @@ function App() {
       <Route exact path='/userlogin' component={logins}/>
       <Route exact path='/products'component={Products}/>
       <Route exact path='/admin'component={Admin}/>
+      <Route exact path='/AboutUs'component={About}/>
       <Footer/>
       </BrowserRouter>
     </div>
