@@ -13,6 +13,7 @@ function Home(){
             <div className="app__main">
             {/* Search bar */}
             <div className="search__bar">
+                <input type="search" placeholder="Search your item"></input>
             </div>
             {/* Video on the main page */}
             <video className="app__video" autoPlay muted loop>
