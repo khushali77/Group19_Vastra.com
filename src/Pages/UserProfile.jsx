@@ -170,7 +170,7 @@ function UserProfile(){
       <ul className="general">
                   <li href="/">Terms and Conditions</li>
                   <li href="/">Contact Us</li>
-                  <li href="/">FAQs</li>
+                  <li href="/">FAQ</li>
                   <li href="/">Privacy policy</li>
       </ul>
       <Marginer direction="vertical" margin="1em" />
