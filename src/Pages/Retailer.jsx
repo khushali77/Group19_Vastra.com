@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table, Button, Row, Col } from 'react-bootstrap'
+import { Table, Row, Col } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 
 
@@ -13,13 +13,14 @@ function ProductList() {
         <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             <Row className='align-items-center'>
                 <Col>
-                    <h1>Product List</h1>
+                    <h1>Inventory List</h1>
                 </Col>
                 <LinkContainer to='/AddItem'>
                 <Col className='text-right'>
-                    <Button className='my-3'>
-                        <i className='fas fa-plus'></i> Add Product
-                    </Button>
+                <button class="btn btn-outline-secondary" type="button">+Add Item</button>
+                    {/* <Button className='my-3'>
+                        <i className='fas fa-plus'></i> Add Item
+                    </Button> */}
                 </Col>
                 </LinkContainer>
             </Row>
@@ -40,7 +41,7 @@ function ProductList() {
                         <td>Green Round neck Tshirt</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                            <button type="button" class="btn btn-default">Edit</button>
+                            <button type="button" class="btn btn-default">Edit Item Detail</button>
                             </LinkContainer>
 
                         </td>
@@ -50,7 +51,7 @@ function ProductList() {
                         <td>Levis Denim Jeans</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                            <button type="button" class="btn btn-default">Edit</button>
+                            <button type="button" class="btn btn-default">Edit Item Detail</button>
                             </LinkContainer>
 
                         </td>
@@ -60,7 +61,7 @@ function ProductList() {
                         <td>Olive Full Sleeves Tshirt</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                            <button type="button" class="btn btn-default">Edit</button>
+                            <button type="button" class="btn btn-default">Edit Item Detail</button>
                             </LinkContainer>
                         </td>
                     </tr>
@@ -69,7 +70,7 @@ function ProductList() {
                         <td>Puma Gym drycell Tshirt</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                            <button type="button" class="btn btn-default">Edit</button>
+                            <button type="button" class="btn btn-default">Edit Item Detail</button>
                             </LinkContainer>
                         </td>
                     </tr>
@@ -78,7 +79,7 @@ function ProductList() {
                         <td>Nike Track Pants</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                            <button type="button" class="btn btn-default">Edit</button>
+                            <button type="button" class="btn btn-default">Edit Item Detail</button>
                             </LinkContainer>
                         </td>
                     </tr>
@@ -87,7 +88,7 @@ function ProductList() {
                         <td>Green Round neck Tshirt</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                            <button type="button" class="btn btn-default">Edit</button>
+                            <button type="button" class="btn btn-default">Edit Item Detail</button>
                             </LinkContainer>
                         </td>
                     </tr>
@@ -96,7 +97,7 @@ function ProductList() {
                         <td>Black round-neck Tshirt</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                            <button type="button" class="btn btn-default">Edit</button>
+                            <button type="button" class="btn btn-default">Edit Item Detail</button>
                             </LinkContainer>
                         </td>
                     </tr>
@@ -105,7 +106,7 @@ function ProductList() {
                         <td>Shorts Grey</td>
                         <td>
                             <LinkContainer to='/AddItem'>
-                                <button type="button" class="btn btn-default">Edit</button>
+                                <button type="button" class="btn btn-default">Edit Item Detail</button>
                             </LinkContainer>
                         </td>
                     </tr>
