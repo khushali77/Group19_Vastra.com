@@ -65,3 +65,25 @@
 .app__personalize{
     padding-bottom: 50px;
 }
+
+.search__bar{
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search__bar input{
+    border-style: none;
+    padding: 20px;
+    width: 450px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search__bar input:focus{
+    background-color: whitesmoke;
+}
