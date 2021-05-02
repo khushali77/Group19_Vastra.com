@@ -61,8 +61,7 @@ function Home(){
                         {cat.map((photo)=>{
                             return( 
                             <div>
-                                <Link to='/products' onClick={(e)=>{
-                                    CatItem(photo.name,e)}}><Card1 img={photo.url} name={photo.name}/></Link>
+                                <Link to='/products'><Card1 img={photo.url} name={photo.name}/></Link>
                             </div>)
                             })}
                         </Carousel>
