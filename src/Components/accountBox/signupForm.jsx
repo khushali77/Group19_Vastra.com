@@ -28,6 +28,7 @@ export function SignupForm(props) {
         window.location.href = "/";
     } catch (err) {
         alert(err.response)
+        console.log(err)
         console.log("Error")
     }
 }

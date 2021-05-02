@@ -8,6 +8,7 @@
     background-color: #F6D5B6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 .filter{
@@ -17,7 +18,10 @@
 
 .top__bar p{
     justify-self: center;
-    font-size: 18px;
+    font-size: 32px;
+    padding-top: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 0.2em;
 }
 
 .sort{

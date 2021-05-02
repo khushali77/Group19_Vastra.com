@@ -13,7 +13,7 @@ export const brands = [
     },
     {
         "id":"2",
-        "name":"Levi's",
+        "name":"levis",
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj1jJ7jc0vOyw_toclxzvQBkN6pnIvIymCqA&usqp=CAU"
     },
     {

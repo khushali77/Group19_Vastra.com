@@ -2,23 +2,19 @@ import React,{useState} from "react";
 import "../Css/Products.css";
 import {Dropdown, DropdownButton} from 'react-bootstrap'
 import {Card} from "react-bootstrap";
-import {prod} from "../data";
 import check from "../Assets/heart.png";
-import {data_list} from "../Pages/Home.jsx";
-import SearchItem from "../Pages/Home.jsx";
 
 function DisplayCard(props){
     return(
         <div className="per__card">
         <Card style={{ width: '18rem' }}>
-        {/* <Card.Img variant="top" src={props.data.url} className="itemimg"/> */}
+        <Card.Img variant="top" src={props.data.url} className="itemimg"/>
         <hr size="10"></hr>
             <Card.Body>
                 <div className="product__details">
                     <Card.Text className="product__price"> Price : Rs {props.data.price}</Card.Text>
                 <div className="product__details__btn">
-                    <button type = "button" className = "butn">
-                    <i className = "fas fa-shopping-cart icn"></i>Add to cart</button>
+                    <button type = "button" className = "butn"><i className = "fas fa-shopping-cart icn"></i>Add to cart</button>
                     <button type = "button" className = "butn"><img src = {check} className = "heart"  alt = "checked"/></button>
                 </div>
                 </div>
@@ -32,6 +28,8 @@ function Products(){
    
     const [dataList,setdataList] = useState(()=>JSON.parse(window.localStorage.getItem('data')));
     console.log(dataList);
+    const name = window.localStorage.getItem("name");
+    console.log(name);
 
     // useEffect(()=>{},)
     return(
@@ -43,7 +41,7 @@ function Products(){
             <Dropdown.Item as="button">Jeans</Dropdown.Item>
             <Dropdown.Item as="button">Shirts</Dropdown.Item>
             </DropdownButton>
-            <p>Men's T-shirts</p>
+            <p>{name} Products</p>
             <DropdownButton className="sort" id="dropdown-item-button" title="Sort by  " size="md" variant="light">
             <Dropdown.ItemText>Date</Dropdown.ItemText>
             <Dropdown.Item as="button">Price:low to high</Dropdown.Item>
@@ -52,7 +50,7 @@ function Products(){
             </DropdownButton>
         </div>
         <div className="product__cards">
-            {dataList?dataList.map(item=>(<li><DisplayCard data={item}/></li>)):null}
+            {dataList?dataList.map(item=>(<li><DisplayCard data={item} key={item.id}/></li>)):null}
         </div>
         </div>
     );
