@@ -18,7 +18,8 @@ function Header(){
                     <NavDropdown.Item href="userprofile">My Profile</NavDropdown.Item>
                     <NavDropdown.Item href="settings">Settings</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="logout">Log out</NavDropdown.Item>
+                    {localStorage.getItem("userid")===null?<NavDropdown.Item href="/userlogin">Log in</NavDropdown.Item>:<NavDropdown.Item href="/userlogin" onClick={()=>{
+                            localStorage.clear()}}>Log out</NavDropdown.Item>}
                 </NavDropdown>
                 <Nav.Link href="fav">Favourites</Nav.Link>
                 <Nav.Link href="mycart">My Cart</Nav.Link>
