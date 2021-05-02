@@ -29,7 +29,9 @@ export function LoginForm(props) {
         if(r.error!=null){console.log("NO EXISTENCE")}
         else {
           console.log(r);
-          window.location.href = "/";
+          console.log(r.token);
+          localStorage.setItem(r.token);
+          // window.location.href = "/";
         }
 
         console.log("Recieved")

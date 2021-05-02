@@ -1,15 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import "../Css/Products.css";
 import {Dropdown, DropdownButton} from 'react-bootstrap'
 import {Card} from "react-bootstrap";
 import {prod} from "../data";
 import check from "../Assets/heart.png";
+import {data_list} from "../Pages/Home.jsx";
+import SearchItem from "../Pages/Home.jsx";
 
 function DisplayCard(props){
     return(
         <div className="per__card">
         <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={props.data.url} className="itemimg"/>
+        {/* <Card.Img variant="top" src={props.data.url} className="itemimg"/> */}
         <hr size="10"></hr>
             <Card.Body>
                 <div className="product__details">
@@ -27,6 +29,11 @@ function DisplayCard(props){
 }
 
 function Products(){
+   
+    const [dataList,setdataList] = useState(()=>JSON.parse(window.localStorage.getItem('data')));
+    console.log(dataList);
+
+    // useEffect(()=>{},)
     return(
         <div className="products__page">
         {/* Top bar */}
@@ -45,7 +52,7 @@ function Products(){
             </DropdownButton>
         </div>
         <div className="product__cards">
-            {prod.map(item=>(<li><DisplayCard data={item}/></li>))}
+            {dataList?dataList.map(item=>(<li><DisplayCard data={item}/></li>)):null}
         </div>
         </div>
     );

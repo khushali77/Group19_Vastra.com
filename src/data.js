@@ -95,19 +95,19 @@ export const prod = [
 
 export const cat = [
     {
-        "name":"Men",
+        "name":"men",
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmy-pNRwISISkITc4erjl6bHqTbszqj_lqGA&usqp=CAU"
     },
     {
-        "name":"Women",
+        "name":"women",
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuBIeNisPaWrgzth4bOEJSkIaAyIA7DuYtSg&usqp=CAU"
     },
     {
-        "name":"Kids",
+        "name":"kids",
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZUL7L63VqPM1iZzuySw2AZdCBNfxlUm7Dg&usqp=CAU"
     },
     {
-        "name":"Traditional",
+        "name":"traditional",
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk2T-xQojp0814PEvPeRygP-GlMXawz40dIA&usqp=CAU"
     }
 ]
