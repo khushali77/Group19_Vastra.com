@@ -26,17 +26,14 @@ export function LoginForm(props) {
         .then(res=>r = res.data)
 
         localStorage.setItem('firstLogin', true)
-        if(r.error!=null){console.log("NO EXISTENCE")}
+        if(r.error!=null){alert("User doesn't exist, \nRegister yourself first:)")}
         else {
           console.log(r);
           console.log(r.token);
-          localStorage.setItem(r.token);
-          // window.location.href = "/";
-        }
-
-        console.log("Recieved")
-
-        
+          localStorage.setItem("token",r.token);
+          localStorage.setItem("userid",r.user._id);
+          window.location.href = "/";
+        }        
     } catch (err) {
         alert(err.response)
         console.log("Error")

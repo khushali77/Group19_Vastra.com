@@ -87,3 +87,7 @@
 .search__bar input:focus{
     background-color: whitesmoke;
 }
+
+.search-button{
+    margin-left: 20px;
+}
