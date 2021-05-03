@@ -7,7 +7,6 @@ function Header(){
 
     const getCart = async(e) =>{
         const userid = localStorage.getItem("userid");
-        // let x;
         e.preventDefault();
         try {
                const x = await axios.get(`http://localhost:4000/api/userprof/mycart/${userid}`, {
@@ -16,16 +15,12 @@ function Header(){
                    "Content-type":"application/json; charset=UTF-8"
                }
        }) 
-            // .then(res=>{x = res.data})
             console.log(x)
             localStorage.setItem("cartlist",JSON.stringify(x.data));
             window.location.href = "/mycart";
-            // const cart = JSON.parse(localStorage.getItem("cartlist"))
-            // console.log(cart)
        } catch (err) {
            console.log(err);
            console.log("ERROR");
-           // alert(err.response.data.msg)
        }
     }
 

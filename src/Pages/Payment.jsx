@@ -16,6 +16,7 @@ function Payment(){
             <Button variant="custom"
                 onClick={()=>{
                 setCheckout(true);
+                localStorage.removeItem("cartlist");
             }}
             >
             Yes, proceed to Checkout
