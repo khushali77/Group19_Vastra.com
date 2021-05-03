@@ -50,7 +50,6 @@ function Home(){
         }) 
             .then(res=>data_list = res.data)
             console.log("Data recieved:",data_list)
-            // console.log(typeof(data_list[0]))
             localStorage.setItem("data",JSON.stringify(data_list));
             window.location.href = "/products";
         } catch (err) {

@@ -17,12 +17,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Header/>
-      <Route exact path='/' component={Home}/>
+      {localStorage.getItem("userid")===null?<Route exact path='/' component={logins}/>:<Route exact path='/' component={Home}/>}
       <Route exact path='/fav' component={Favourites}/>
       <Route exact path='/mycart' component={MyBag}/>
       <Route exact path='/userprofile' component={UserProfile}/>
       <Route exact path='/settings' component={Settings}/>
-      <Route exact path='/userlogin' component={logins}/>
       <Route exact path='/products'component={Products}/>
       <Route exact path='/admin'component={Admin}/>
       <Route exact path="/payment" component={Payment}/>

@@ -3,8 +3,23 @@ import "../Css/Products.css";
 import {Dropdown, DropdownButton} from 'react-bootstrap'
 import {Card} from "react-bootstrap";
 import check from "../Assets/heart.png";
+import axios from "axios";
 
 function DisplayCard(props){
+
+    const addtocart = async (itemid,e) => {
+        const userid = localStorage.getItem("userid")
+        console.log(userid," -> ",itemid);
+        e.preventDefault()
+        try {
+            await axios.post(`http://localhost:4000/api/userprof/addtocart/${userid}/${itemid}`) 
+            .then(res=>console.log(res.data))
+        } catch (err) {
+            console.log(err);
+            console.log("ERROR");
+        }
+    }
+
     return(
         <div className="per__card">
         <Card style={{ width: '18rem' }}>
@@ -14,7 +29,7 @@ function DisplayCard(props){
                 <div className="product__details">
                     <Card.Text className="product__price"> Price : Rs {props.data.price}</Card.Text>
                 <div className="product__details__btn">
-                    <button type = "button" className = "butn"><i className = "fas fa-shopping-cart icn"></i>Add to cart</button>
+                    <button type = "button" className = "butn"  onClick={(e)=>{addtocart(props.data._id,e)}}><i className = "fas fa-shopping-cart icn"></i>Add to cart</button>
                     <button type = "button" className = "butn"><img src = {check} className = "heart"  alt = "checked"/></button>
                 </div>
                 </div>
