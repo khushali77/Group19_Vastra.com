@@ -1,0 +1,24 @@
+.product{
+    margin: 100px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    overflow: hidden;
+    border: rgb(221, 220, 221) solid 2px;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+.product img{
+    justify-self: center;
+}
+
+.prod__info{
+    margin-top: 15px;
+    margin-left: 75px;
+}
+
+.prod__buttons{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}

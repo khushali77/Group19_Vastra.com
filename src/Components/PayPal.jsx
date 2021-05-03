@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect,useState, useRef } from "react";
 
 export default function PayPal(){
 
+    const [total,setTotal] = useState(localStorage.getItem("total")); 
     const paypal = useRef()
-    const total = localStorage.getItem("total")
 
     useEffect(()=>{
         window.paypal.Buttons({
@@ -27,7 +27,7 @@ export default function PayPal(){
                 console.log(err)
             }
         }).render(paypal.current)
-    },[])
+    },[total])
 
 
     return(
