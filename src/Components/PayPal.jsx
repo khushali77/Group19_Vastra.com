@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 export default function PayPal(){
 
     const paypal = useRef()
+    const total = localStorage.getItem("total")
 
     useEffect(()=>{
         window.paypal.Buttons({
@@ -10,10 +11,10 @@ export default function PayPal(){
                 return actions.order.create({
                     intent:"CAPTURE",
                     purchase_units:[{
-                        description:"Cool looking table",
+                        description:"Your order",
                         amount:{
                             currency_code:"USD",
-                            value:650.00
+                            value:total,
                         }
                     }]
                 })

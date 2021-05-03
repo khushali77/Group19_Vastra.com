@@ -13,6 +13,7 @@
     justify-self: end;
     background-color: #F6D5B6;
     margin-bottom: 32px;
+    height: 700px;
 }
 
 .peritem{
@@ -64,7 +65,7 @@
     padding: 20px;
     width: 92%;
     border-radius: 10px;
-    height: 30%;
+    height: 95%;
 }
 
 .cart__details h2,h4{
