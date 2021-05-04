@@ -104,7 +104,7 @@ function Products(){
             </DropdownButton>
         </div>
         <div className="product__cards">
-            {dataList?dataList.map(item=>(<li><DisplayCard data={item} key={item.id}/></li>)):null}
+            {dataList?dataList.map(item=>(<li><DisplayCard data={item} key={item._id}/></li>)):null}
         </div>
         </div>
     );
