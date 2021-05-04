@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Css/Favourites.css";
 import axios from "axios";
+import {toast} from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css'; 
+toast.configure() 
+
 
 const favs = JSON.parse(localStorage.getItem("favlist"));
 
@@ -14,7 +18,7 @@ export const Item = (props) =>{
         try {
             await axios.post(`http://localhost:4000/api/userprof/addtocart/${userid}/${itemid}`) 
             .then(res=>console.log(res.data))
-            alert("Your item has been added to YOUR CART:)")
+            toast.success('Your Product has been added to the Cart!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
         } catch (err) {
             console.log(err);
             console.log("ERROR");
@@ -32,6 +36,7 @@ export const Item = (props) =>{
                 x = res.data;
                 console.log(res.data)})
             localStorage.setItem("favlist",JSON.stringify(x));
+            toast.success('Your Product has been removed!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
             window.location.href = "/fav";
         } catch (err) {
             console.log(err);
