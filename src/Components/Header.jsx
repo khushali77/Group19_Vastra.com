@@ -24,6 +24,26 @@ function Header(){
        }
     }
 
+    const getFav = async(e) =>{
+        const userid = localStorage.getItem("userid");
+        // console.log(userid);
+        e.preventDefault();
+        try {
+               const x = await axios.get(`http://localhost:4000/api/myfav/${userid}`, {
+               method:'GET',
+               headers:{
+                   "Content-type":"application/json; charset=UTF-8"
+               }
+       }) 
+            console.log(x.data)
+            localStorage.setItem("favlist",JSON.stringify(x.data));
+            window.location.href = "/fav";
+       } catch (err) {
+           console.log(err);
+           console.log("ERROR");
+       }
+    }
+
     return(
         <div className="header">
             {/* Navbar using Bootstrap */}
@@ -42,7 +62,7 @@ function Header(){
                     {localStorage.getItem("userid")===null?<NavDropdown.Item href="/">Log in</NavDropdown.Item>:<NavDropdown.Item href="/" onClick={()=>{
                             localStorage.clear()}}>Log out</NavDropdown.Item>}
                 </NavDropdown>
-                <Nav.Link href="fav">Favourites</Nav.Link>
+                <Nav.Link href="/fav" onClick={(e)=>getFav(e)}>Favourites</Nav.Link>
                 <Nav.Link href="/mycart" onClick={(e)=>getCart(e)}>My Cart</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
