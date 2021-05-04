@@ -1,8 +1,34 @@
 import React from "react";
 import {BrowserRouter, Link} from "react-router-dom";
 import "../Css/Footer.css";
+import axios from "axios";
 
 function Footer(){
+
+  const CatItem = async (name,e) =>{
+    // console.log(e)
+    let data_list;
+    localStorage.setItem("name",name)
+    console.log("Inside the request funtion:"+name);
+    e.preventDefault()
+    try {
+         data_list = await axios.get(`http://localhost:4000/api/products/cat/${name}`, {
+            method:'GET',
+            headers:{
+                "Content-type":"application/json; charset=UTF-8"
+            }
+    }) 
+        .then(res=>data_list = res.data)
+        console.log("Data recieved:",data_list)
+        localStorage.setItem("data",JSON.stringify(data_list));
+        window.location.href = "/products";
+    } catch (err) {
+        console.log(err);
+        console.log("ERROR");
+        // alert(err.response.data.msg)
+    }
+}
+
     return(
         <footer className="site-footer">
           <div className="container">
@@ -17,11 +43,11 @@ function Footer(){
                 <ul className="footer-links">
                   {/* Categories section links */}
                   <BrowserRouter>
-                  <li><Link to="/">Men</Link></li>
-                  <li><Link to="/">Women</Link></li>
-                  <li><Link to="/">Kids</Link></li>
-                  <li><Link to="/">Traditionals</Link></li>
-                  <li><Link to="/">Western</Link></li>
+                  <li><Link to="/" onClick={(e)=>{CatItem("men",e)}}>Men</Link></li>
+                  <li><Link to="/" onClick={(e)=>{CatItem("women",e)}}>Women</Link></li>
+                  <li><Link to="/" onClick={(e)=>{CatItem("kids",e)}}>Kids</Link></li>
+                  <li><Link to="/" onClick={(e)=>{CatItem("traditionals",e)}}>Traditionals</Link></li>
+                  <li><Link to="/" onClick={(e)=>{CatItem("western",e)}}>Western</Link></li>
                   </BrowserRouter>
                 </ul>
               </div>
@@ -31,12 +57,10 @@ function Footer(){
                 <ul className="footer-links">
                 {/* Categories quick links */}
                 <BrowserRouter>
-                  <li><Link to="/">About Us</Link></li>
-                  <li><Link to="/">Contact Us</Link></li>
-                  <li><Link to="/">Contribute</Link></li>
-                  <li><Link to="/">Privacy Policy</Link></li>
-                  <li><Link to="/">Sitemap</Link></li>
-                  </BrowserRouter>
+                  <li><Link to="/aboutus">About Us</Link></li>
+                  <li><Link to="/contactus">Contact Us</Link></li>
+                  <li><Link to="/privacypolicy">Privacy Policy</Link></li>
+                </BrowserRouter>
                 </ul>
               </div>
 
