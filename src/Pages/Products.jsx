@@ -5,10 +5,12 @@ import {Card} from "react-bootstrap";
 import check from "../Assets/heart.png";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import {toast} from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css'; 
 
 // import { getDelayFromTransition } from "framer-motion/types/animation/utils/transitions";
 // import Toast from 'react-bootstrap/Toast'
-
+toast.configure() 
 function DisplayCard(props){
 
     const addtocart = async (itemid,e) => {
@@ -18,7 +20,7 @@ function DisplayCard(props){
         try {
             await axios.post(`http://localhost:4000/api/userprof/addtocart/${userid}/${itemid}`) 
             .then(res=>console.log(res.data))
-            alert("Your item has been added to THE CART!");
+            toast.success('Your Product has been added to the Cart!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
         } catch (err) {
             console.log(err);
             console.log("ERROR");
@@ -32,7 +34,7 @@ function DisplayCard(props){
         try {
             await axios.post(`http://localhost:4000/api/addtofav/${userid}/${itemid}`) 
             .then(res=>console.log(res.data));
-            alert("Your item has been added to FAVORITES!");
+            toast.success('Your Product has been added to Favourites!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
         } catch (err) {
             console.log(err);
             console.log("ERROR");
@@ -102,7 +104,7 @@ function Products(){
             </DropdownButton>
         </div>
         <div className="product__cards">
-            {dataList?dataList.map(item=>(<li><DisplayCard data={item} key={item.id}/></li>)):null}
+            {dataList?dataList.map(item=>(<li><DisplayCard data={item} key={item._id}/></li>)):null}
         </div>
         </div>
     );

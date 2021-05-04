@@ -85,7 +85,7 @@ function MyCart(props){
         <h2>It's your Cart :)</h2>
             <div className="mybag__area">
                 <div className="cards">
-                {Object.keys(final_cart).map(item=>(<li key={item.id}><Item data={item}/></li>))}
+                {Object.keys(final_cart).map(item=>(<li key={item}><Item data={item}/></li>))}
                 </div>
                 <div className="cart__details">
                     <h2>Details</h2>

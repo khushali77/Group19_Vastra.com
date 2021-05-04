@@ -22,3 +22,31 @@
     display: grid;
     grid-template-columns: 2.5fr 1fr;
 }
+
+.title{
+    font-size: 46px;
+    color: #90A9A6;
+}
+
+.rupee{
+    font-size: 40px;
+}
+
+.price{
+    font-size: 30px;
+}
+
+.desc{
+    font-size: 22px;
+    color: rgb(78, 77, 77);
+}
+
+.disc{
+    font-size: 22px;
+    color: red;
+}
+
+.desch,.disch{
+    font-size: 26px;
+    color: black;
+}
