@@ -64,7 +64,7 @@ function DisplayCard(props){
         <hr size="10"></hr></Link>
             <Card.Body>
                 <div className="product__details">
-                    <Card.Text className="product__price"> Price : Rs {props.data.price}</Card.Text>
+                    <Card.Text className="product__price"> Price : ₹ {props.data.price}</Card.Text>
                 <div className="product__details__btn">
                     <Button animated='vertical' onClick={(e)=>{addtocart(props.data._id,e)}}>
                     <Button.Content hidden><Icon name='shop' /></Button.Content>

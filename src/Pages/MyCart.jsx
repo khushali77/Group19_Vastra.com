@@ -35,7 +35,7 @@ export const Item = (props) =>{
         </div>
         <div className="peritem__details">
             <p>Product : <Link to="/item">{cart[props.data].product.title}</Link></p>
-            <p>Price : Rs {cart[props.data].product.price}</p>
+            <p>Price : ₹ {cart[props.data].product.price}</p>
             <p className="qty">Quantity : </p> <input className="qty__input" type="number" min="0" value={qty} defaultValue={cart[props.data].quan} onChange={(e)=>{
                 console.log(e.target.value);
                 setQty(e.target.value);
