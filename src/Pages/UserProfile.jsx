@@ -4,12 +4,12 @@ import { Marginer } from "../Components/marginer";
 import "../Css/UserProfile.css"
 
 const BoxLayout = styled.div`
-height:10%;
 margin-left: 30%;
 margin-top: 4%;
 margin-bottom: 2%;
 margin-right: 30%;
-  width: 50%;
+  width: 40%;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   border-radius: 19px;
@@ -46,7 +46,7 @@ export const MutedLink = styled.a`
 const Input = styled.input`
   width: 60%;
   margin-top: 2%;
-  margin-left: 12%;
+  margin-left: 10%;
   height: 50px;
   outline: none;
   border: 1px solid rgba(200, 200, 200, 1);
@@ -104,7 +104,6 @@ const HeaderContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top:5%;
 `;
 
 const HeaderText = styled.text`
@@ -125,18 +124,11 @@ const SmallText = styled.h5`
   margin-top: 2%;
   margin-bottom: 20px;
 `;
-const AppContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
+
 function UserProfile(){
     return(
         <div class="backgroundprofile">
-          <AppContainer>
+
         <BoxLayout>
         <HeaderContainer>
               <HeaderText>Vastra.com</HeaderText>
@@ -167,15 +159,8 @@ function UserProfile(){
       
       <Marginer direction="vertical" margin={10} />
       <SubmitButton type="submit">Save</SubmitButton>
-      <ul className="general">
-                  <li href="/">Terms and Conditions</li>
-                  <li href="/">Contact Us</li>
-                  <li href="/">FAQ</li>
-                  <li href="/">Privacy policy</li>
-      </ul>
       <Marginer direction="vertical" margin="1em" />
     </BoxLayout>
-    </AppContainer>
     </div>
     )
 }
