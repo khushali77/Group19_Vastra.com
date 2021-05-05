@@ -18,7 +18,7 @@ export const Item = (props) =>{
         try {
             await axios.post(`http://localhost:4000/api/userprof/addtocart/${userid}/${itemid}`) 
             .then(res=>console.log(res.data))
-            toast.success('Your Product has been added to the Cart!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
+            toast.dark('Your Product has been added to the Cart!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
         } catch (err) {
             console.log(err);
             console.log("ERROR");
