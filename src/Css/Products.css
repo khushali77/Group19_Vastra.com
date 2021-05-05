@@ -8,13 +8,8 @@
     background-color: #F6D5B6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
 
-.filter{
-    justify-self: start;
-    margin-left: 30px;
-}
 
 .top__bar p{
     justify-self: center;
@@ -22,11 +17,6 @@
     padding-top: 12px;
     font-family: 'Times New Roman', Times, serif;
     line-height: 0.2em;
-}
-
-.sort{
-    justify-self: end;
-    margin-right: 30px;
 }
 
 .product__cards{
@@ -50,38 +40,7 @@
     margin-bottom: -12px;
 }
 
-.product__details__btn{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.butn{
-    border: 1.5px solid #ddd;
-    border-radius: 0%;
-    padding: 0.45rem 0.8rem;
-    outline: 0;
-    font-size: 100%;
-    height:45px;
-}
-
-.butn:first-of-type{
-    background: #90A9A6;
-}
-
-.icn{
-    margin-right:1rem;
-}
-
-.butn:last-of-type{
-    background: #90A9A6;
-    width: 50%; 
-}
-
-.heart{
-    height: 100%;
-    width: 100%;
-}
-
-.butn:hover{
-    opacity: 0.9;
+.card-body{
+    padding-right: 0px;
+    padding-left: 11%;
 }
