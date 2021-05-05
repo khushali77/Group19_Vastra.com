@@ -3,7 +3,7 @@ import "../Css/MyBag.css";
 import { Link } from "react-router-dom";
 import {default as Bt} from 'react-bootstrap/Button';
 import axios from "axios";
-import { Button, Icon } from 'semantic-ui-react'
+import { Button} from 'semantic-ui-react'
 
 let cart = JSON.parse(localStorage.getItem("cartlist"));
 

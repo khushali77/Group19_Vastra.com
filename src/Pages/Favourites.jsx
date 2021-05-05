@@ -4,7 +4,7 @@ import "../Css/Favourites.css";
 import axios from "axios";
 import {toast} from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css'; 
-import { Button, Icon } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 
 toast.configure() 
 const favs = JSON.parse(localStorage.getItem("favlist"));

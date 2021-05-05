@@ -1,5 +1,6 @@
 .products__page{
-    background-color: #D5D7CC;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='29.3' stroke-opacity='0.01'%3E%3Crect fill='%23f6d5b6' x='-60' y='-60' width='150' height='240'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .top__bar{
@@ -20,8 +21,8 @@
 }
 
 .product__cards{
-    margin-left: 17%;
-    width: 70%;
+    margin-left: 11%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-row-gap: 0%;
@@ -42,5 +43,27 @@
 
 .card-body{
     padding-right: 0px;
-    padding-left: 11%;
+    padding-left: 8%;
+}
+
+.price{
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+.disc{
+    font-size: 18px !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.limit{
+    color: red;
+    font-size: 16px;
+    font-family: cursive;
 }
