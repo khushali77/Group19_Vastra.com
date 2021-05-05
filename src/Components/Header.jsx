@@ -17,7 +17,7 @@ function Header(){
        }) 
             console.log(x)
             localStorage.setItem("cartlist",JSON.stringify(x.data));
-            window.location.href = "/mycart";
+            x.data.length===0?window.location.href = "/empty":window.location.href = "/mycart";
        } catch (err) {
            console.log(err);
            console.log("ERROR");

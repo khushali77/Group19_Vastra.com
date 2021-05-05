@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 import {toast} from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css'; 
 
-// import { getDelayFromTransition } from "framer-motion/types/animation/utils/transitions";
-// import Toast from 'react-bootstrap/Toast'
 toast.configure() 
 function DisplayCard(props){
 

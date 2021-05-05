@@ -12,6 +12,7 @@ import logins from "./Components/login";
 import Admin from "./Pages/Admin";
 import Payment from "./Pages/Payment";
 import Product from "./Pages/Product";
+import Empty from "./Pages/Empty";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route exact path='/admin'component={Admin}/>
       <Route exact path='/payment' component={Payment}/>
       <Route exact path='/product' component={Product}/>
+      <Route exact path='/empty' component={Empty}/>
       <Footer/>
       </BrowserRouter>
     </div>

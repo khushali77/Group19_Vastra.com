@@ -1,6 +1,7 @@
 .favs{
-    margin-top: 65px;
+    margin-top: 100px;
     margin-left: 20%;
+    min-height: 450px;
 }
 
 .fav__area{
