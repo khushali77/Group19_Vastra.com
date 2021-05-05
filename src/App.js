@@ -13,6 +13,7 @@ import Admin from "./Pages/Admin";
 import Payment from "./Pages/Payment";
 import Product from "./Pages/Product";
 import Empty from "./Pages/Empty";
+import Common from "./Pages/Common";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
       <Route exact path='/payment' component={Payment}/>
       <Route exact path='/product' component={Product}/>
       <Route exact path='/empty' component={Empty}/>
+      <Route exact path='/privacypolicy' component={Common}/>
+      <Route exact path='/aboutus' component={Common}/>
+      <Route exact path='/contactus' component={Common}/>
       <Footer/>
       </BrowserRouter>
     </div>
