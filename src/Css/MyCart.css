@@ -1,7 +1,14 @@
 .mybag{
-    margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 100px;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='29.3' stroke-opacity='0.01'%3E%3Crect fill='%23f6d5b6' x='-60' y='-60' width='150' height='240'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.carth{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: blanchedalmond;
 }
 
 .mybag__area{
@@ -11,9 +18,10 @@
 
 .cart__details{
     justify-self: end;
-    background-color: #F6D5B6;
+    background-color: blanchedalmond;
     margin-bottom: 32px;
     height: 700px;
+    border:#D5D7CC  13px solid;
 }
 
 .peritem{
@@ -63,7 +71,7 @@
 
 .cart__details{
     padding: 20px;
-    width: 92%;
+    width: 100%;
     border-radius: 10px;
     height: 95%;
 }
