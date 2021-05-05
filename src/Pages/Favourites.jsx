@@ -63,6 +63,8 @@ export const Item = (props) =>{
 
 function Favourites(){
 
+    if(favs.length===0)window.location.href='/empty';
+
     return(
         <div className="favs">
         <h2>These are your favourites :)</h2>

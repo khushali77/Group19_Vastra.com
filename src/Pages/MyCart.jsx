@@ -62,6 +62,7 @@ export const Item = (props) =>{
 function MyCart(props){
 
     const final_cart = JSON.parse(localStorage.getItem("cartlist"));
+    if(final_cart.length===0)window.location.href = "/empty";
     console.log("final_cart",final_cart);
     var price = 0;
     var i;
