@@ -88,18 +88,9 @@ function Products(){
         <div className="products__page">
         {/* Top bar */}
         <div className="top__bar">
-            <DropdownButton className="filter" id="dropdown-item-button" title="Filter by  " size="md" variant="light">
-            <Dropdown.ItemText>Tshirts</Dropdown.ItemText>
-            <Dropdown.Item as="button">Jeans</Dropdown.Item>
-            <Dropdown.Item as="button">Shirts</Dropdown.Item>
-            </DropdownButton>
+            <p></p>
             <p>{name} Products</p>
-            <DropdownButton className="sort" id="dropdown-item-button" title="Sort by  " size="md" variant="light">
-            <Dropdown.ItemText>Date</Dropdown.ItemText>
-            <Dropdown.Item as="button">Price:low to high</Dropdown.Item>
-            <Dropdown.Item as="button">Price:high to low</Dropdown.Item>
-            <Dropdown.Item as="button">size</Dropdown.Item>
-            </DropdownButton>
+            <p></p>
         </div>
         <div className="product__cards">
             {dataList?dataList.map(item=>(<li><DisplayCard data={item} key={item._id}/></li>)):null}
