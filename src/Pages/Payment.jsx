@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import React,{useState} from "react";
 import PayPal from "../Components/PayPal";
+import "../Css/Payment.css";
 
 function Payment(){
 

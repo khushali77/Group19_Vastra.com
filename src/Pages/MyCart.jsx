@@ -1,8 +1,9 @@
 import React,{useState} from "react";
 import "../Css/MyBag.css";
 import { Link } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
+import {default as Bt} from 'react-bootstrap/Button';
 import axios from "axios";
+import { Button, Icon } from 'semantic-ui-react'
 
 let cart = JSON.parse(localStorage.getItem("cartlist"));
 
@@ -53,7 +54,10 @@ export const Item = (props) =>{
                 localStorage.setItem("cartlist",JSON.stringify(cart));
                 window.location.href='/mycart';
             }}/><br/>
-            <button type = "button" className = "butn" onClick={(e)=>{removefromcart(cart[props.data].id,e)}}><i className = "remove"></i>Remove</button>
+            <Button animated='vertical' onClick={(e)=>{removefromcart(cart[props.data].id,e)}}>
+            <Button.Content hidden>Remove</Button.Content>
+            <Button.Content visible>Remove</Button.Content>
+            </Button>
         </div>
      </div>
      );
@@ -111,11 +115,16 @@ function MyCart(props){
                         {localStorage.setItem("total",total)}
                     </div>
                     <div className="checkout__btn">
-                        <Button variant="custom" onClick={(e) => {
+                        <Bt variant="custom" onClick={(e) => {
                             e.preventDefault();
-                            window.location.href='/payment';
+                            if(total===0){
+                                window.location.href='/empty';
+                            }
+                            else{
+                                window.location.href='/payment';
+                            }
                             }}>
-                            Proceed to Checkout</Button>
+                            Proceed to Checkout</Bt>
                     </div>
                 </div>
             </div>

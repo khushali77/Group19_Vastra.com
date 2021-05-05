@@ -5,7 +5,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import {toast} from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css'; 
-import { Button, Icon } from 'semantic-ui-react'
+import { Button, Icon } from 'semantic-ui-react';
 
 toast.configure() 
 function DisplayCard(props){
