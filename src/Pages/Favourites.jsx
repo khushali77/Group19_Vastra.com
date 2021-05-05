@@ -4,9 +4,9 @@ import "../Css/Favourites.css";
 import axios from "axios";
 import {toast} from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css'; 
+import { Button, Icon } from 'semantic-ui-react'
+
 toast.configure() 
-
-
 const favs = JSON.parse(localStorage.getItem("favlist"));
 
 export const Item = (props) =>{
@@ -50,11 +50,16 @@ export const Item = (props) =>{
         </div>
         <div className="peritem__details">
             {/* {console.log(props.data)} */}
-            <p>Product : <Link to="/item">{props.data.product.title}</Link></p>
-            <p>Price : Rs {props.data.product.price}</p>
-            <button type = "button" className = "butn" onClick={(e)=>{removefav(props.data.id,e)}}><i className = "remove"></i>Remove</button>
-            <button type = "button" className = "add" onClick={(e)=>{
-                        addtocart(props.data.id,e)}}><i className = "addtocart"></i>Add to Cart</button>
+            <p>Product :<Link to="/item">{props.data.product.title}</Link></p>
+            <p>Price : ₹ {props.data.product.price}</p>
+            <Button animated='vertical' onClick={(e)=>{removefav(props.data.id,e)}}>
+            <Button.Content hidden>Remove</Button.Content>
+            <Button.Content visible>Remove</Button.Content>
+            </Button>
+            <Button animated='vertical' onClick={(e)=>{addtocart(props.data.id,e)}}>
+            <Button.Content hidden>Add to Cart</Button.Content>
+            <Button.Content visible>Add to Cart</Button.Content>
+            </Button>
         </div>
      </div>
      );

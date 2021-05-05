@@ -13,12 +13,10 @@
     margin-top: 25px;
 }
 
-.add{
-    border: 1.5px solid #ddd;
-    border-radius: 0%;
-    padding: 0.45rem 0.8rem;
-    outline: 0;
-    font-size: 100%;
-    height:45px;
-    background-color: #90A9A6;
+.product{
+    font-size: 40px;
+}
+
+.price{
+    font-size: 40px;
 }
