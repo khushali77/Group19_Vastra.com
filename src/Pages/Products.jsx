@@ -26,11 +26,16 @@ function DisplayCard(props){
     const addtofav = async (itemid,e) => {
         const userid = localStorage.getItem("userid")
         console.log(userid," -> ",itemid);
+        let r;
         e.preventDefault()
         try {
             await axios.post(`http://localhost:4000/api/addtofav/${userid}/${itemid}`) 
-            .then(res=>console.log(res.data));
-            toast.dark('Your Product has been added to Favourites!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
+            .then(res=>{console.log(res.data);
+            r = res.data});
+            if(r.message){
+                toast.dark('ALREADY in favourites!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
+            }
+            else{toast.dark('Your Product has been added to Favourites!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})}
         } catch (err) {
             console.log(err);
             console.log("ERROR");

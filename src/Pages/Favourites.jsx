@@ -17,7 +17,7 @@ export const Item = (props) =>{
         e.preventDefault()
         try {
             await axios.post(`http://localhost:4000/api/userprof/addtocart/${userid}/${itemid}`) 
-            .then(res=>console.log(res.data))
+            .then(res=>{console.log(res.data)})
             toast.dark('Your Product has been added to the Cart!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
         } catch (err) {
             console.log(err);
