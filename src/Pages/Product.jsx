@@ -12,11 +12,16 @@ function Product(){
     const addtofav = async (itemid,e) => {
         const userid = localStorage.getItem("userid")
         console.log(userid," -> ",itemid);
+        let r;
         e.preventDefault()
         try {
             await axios.post(`http://localhost:4000/api/addtofav/${userid}/${itemid}`) 
-            .then(res=>console.log(res.data));
-            toast.dark('Your Product has been added to Favourites!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
+            .then(res=>{console.log(res.data);
+                r = res.data});
+                if(r.message){
+                    toast.dark('ALREADY in favourites!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
+                }
+                else{toast.dark('Your Product has been added to Favourites!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})}
         } catch (err) {
             console.log(err);
             console.log("ERROR");
@@ -40,7 +45,7 @@ function Product(){
     return(
         <div className="prodbody">
         <div className="product">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotqVSaLLN6MwLmrfQFnOW_sMRJN8k3ge3oA&usqp=CAU" alt="clothimg"></img>
+            <img src={product.imageurl} alt="clothing"></img>
             <div className="prod__info">
                 <h1 className="title">{product.title}</h1>
                 <h3 className="prices"><span className="rs">₹</span> {product.price}</h3>
