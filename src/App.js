@@ -14,6 +14,7 @@ import Payment from "./Pages/Payment";
 import Product from "./Pages/Product";
 import Empty from "./Pages/Empty";
 import Common from "./Pages/Common";
+import AddProduct from "./Pages/AddProduct";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route exact path='/privacypolicy' component={Common}/>
       <Route exact path='/aboutus' component={Common}/>
       <Route exact path='/contactus' component={Common}/>
+      <Route exact path='/addproduct' component={AddProduct}/>
       <Footer/>
       </BrowserRouter>
     </div>
