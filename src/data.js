@@ -13,7 +13,7 @@ export const brands = [
     },
     {
         "id":"2",
-        "name":"levis",
+        "name":"Levis",
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj1jJ7jc0vOyw_toclxzvQBkN6pnIvIymCqA&usqp=CAU"
     },
     {
@@ -89,19 +89,19 @@ export const prod = [
 
 export const cat = [
     {
-        "name":"men",
+        "name":"Men",
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmy-pNRwISISkITc4erjl6bHqTbszqj_lqGA&usqp=CAU"
     },
     {
-        "name":"women",
+        "name":"Women",
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuBIeNisPaWrgzth4bOEJSkIaAyIA7DuYtSg&usqp=CAU"
     },
     {
-        "name":"kids",
+        "name":"Kids",
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZUL7L63VqPM1iZzuySw2AZdCBNfxlUm7Dg&usqp=CAU"
     },
     {
-        "name":"traditional",
+        "name":"Traditional",
         "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk2T-xQojp0814PEvPeRygP-GlMXawz40dIA&usqp=CAU"
     }
 ]

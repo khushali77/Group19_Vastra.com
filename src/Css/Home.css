@@ -56,6 +56,14 @@
     margin:50px 0;
 }
 
+.card:hover{
+
+    -webkit-box-shadow: 0px 6px 28px -6px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 6px 28px -6px rgba(0,0,0,0.55);
+box-shadow: 0px 6px 28px -6px rgba(0,0,0,0.55);
+
+}
+
 .mycard{
     height: 250px;
     overflow: hidden;

@@ -1,3 +1,46 @@
 .addproduct{
     margin-top: 70px;
 }
+
+p:first-child {
+    margin-top: auto !important;
+}
+
+.addproduct h2{
+    margin-left: 80px;
+}
+
+.addproduct form{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.addproduct p{
+    font-size: 20px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.addproduct input{
+    padding: 10px;
+    margin: 10px 30% 10px 0px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.addproduct select{
+    padding: 10px;
+    margin: 10px 30% 10px 0px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.uploadimg{
+    border: none !important;
+}
+
+.btn-dark{
+    width: 20%;
+    margin-bottom: 30px;
+    padding: 10px;
+}
