@@ -14,15 +14,17 @@ import axios from "axios";
 export function SignupForm(props) {
   const { switchToSignin } = useContext(AccountContext);
   const [name,setName] = useState("");
+  const [lastname,setLastname] = useState("");
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
 
   const registerSubmit = async e =>{
     e.preventDefault()
     try {
-        await axios.post('http://localhost:4000/api/signup', {name,email,password})
+        await axios.post('http://localhost:4000/api/signup', {name,lastname,email,password})
+        .then(res=>console.log(res.data))
 
-        localStorage.setItem('firstLogin', true)
+        // localStorage.setItem('firstLogin', true)
 
         console.log("Data Recieved")
         window.location.href = "/";
@@ -41,6 +43,12 @@ export function SignupForm(props) {
           </MutedLink>
         <Input type="text" placeholder="Full Name" value={name} onChange={(e)=>{
           setName(e.target.value);
+        }}/>
+        <MutedLink >
+          Last name:{" "}
+          </MutedLink>
+        <Input type="text" placeholder="last name" value={lastname} onChange={(e)=>{
+          setLastname(e.target.value);
         }}/>
         <MutedLink >
           Enter email id:{" "}
