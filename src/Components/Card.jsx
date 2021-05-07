@@ -7,9 +7,6 @@ const Card1 = ({img,name}) => (
         <Image className="mycard" src={img} wrapped ui={false} />
         <Card.Content>
         <Card.Header>{name}</Card.Header>
-        <Card.Description>
-            Matthew is a musician living in Nashville.
-        </Card.Description>
         </Card.Content>
     </Card>
     </div>

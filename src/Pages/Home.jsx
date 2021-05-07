@@ -39,10 +39,10 @@ function Home(){
     const CatItem = async (name,e) =>{
         // console.log(e)
         localStorage.setItem("name",name)
-        console.log("Inside the request funtion:"+name);
+        console.log("Inside the request funtion:"+name.toLowerCase());
         e.preventDefault()
         try {
-             data_list = await axios.get(`http://localhost:4000/api/products/cat/${name}`, {
+             data_list = await axios.get(`http://localhost:4000/api/products/cat/${name.toLowerCase()}`, {
                 method:'GET',
                 headers:{
                     "Content-type":"application/json; charset=UTF-8"
@@ -62,10 +62,10 @@ function Home(){
     const ProdItem = async (name,e) =>{
         // console.log(e)
         localStorage.setItem("name",name)
-        console.log("Inside the request funtion:"+name);
+        console.log("Inside the request funtion:"+name.toLowerCase());
         e.preventDefault()
         try {
-             data_list = await axios.get(`http://localhost:4000/api/products/prod/${name}`, {
+             data_list = await axios.get(`http://localhost:4000/api/products/product/${name.toLowerCase()}`, {
                 method:'GET',
                 headers:{
                     "Content-type":"application/json; charset=UTF-8"
@@ -89,7 +89,7 @@ function Home(){
         localStorage.setItem("name",name)
         e.preventDefault()
         try {
-             data_list = await axios.get(`http://localhost:4000/api/products/brand/${name}`, {
+             data_list = await axios.get(`http://localhost:4000/api/products/brand/${name.toLowerCase()}`, {
                 method:'GET',
                 headers:{
                     "Content-type":"application/json; charset=UTF-8"
