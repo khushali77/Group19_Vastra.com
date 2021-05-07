@@ -64,7 +64,7 @@ function DisplayCard(props){
     return(
         <div className="per__card">
         <Card style={{ width: '20rem' }}>
-        <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotqVSaLLN6MwLmrfQFnOW_sMRJN8k3ge3oA&usqp=CAU" className="itemimg"/>
+        <Card.Img variant="top" src={props.data.imageurl} className="itemimg"/>
         <hr size="10"></hr>
             <Card.Body>
                 <div className="product__details">

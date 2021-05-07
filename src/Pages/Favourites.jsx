@@ -65,7 +65,7 @@ export const Item = (props) =>{
     return( 
      <div className="peritem" key={props.data.id}>
         <div className="peritem__img">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotqVSaLLN6MwLmrfQFnOW_sMRJN8k3ge3oA&usqp=CAU" alt="im"></img>
+            <img src={props.data.product.imageurl} alt="im"></img>
         </div>
         <div className="peritem__details">
             {/* {console.log(props.data)} */}
