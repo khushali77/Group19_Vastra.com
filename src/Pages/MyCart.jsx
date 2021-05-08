@@ -99,8 +99,8 @@ function MyCart(props){
     console.log(userinfo)
 
     let subtotal = price;
-    let cgst = price*0.25;
-    let sgst = price*0.3;
+    let cgst = price*0.2;
+    let sgst = price*0.1;
     let shipping = 0;
 
     price===0?shipping=0:shipping=150;
@@ -121,11 +121,11 @@ function MyCart(props){
                         {userinfo.address?<h4 className="shipping__address">Shipping details : {userinfo.address}</h4>:<h4 className="shipping__address">Shipping details : Kindly add you address on <Link to='/userprofile'>Your Profile</Link> </h4>}
                         <div className="cost__details">
                             <h3 className="subtotal">Subtotal</h3>
-                            <h3 className="cost__subtotal"> ₹ {subtotal}</h3>
+                            <h3 className="cost__subtotal"> ₹ {subtotal.toFixed(2)}</h3>
                             <h3 className="cgst">CGST</h3>
-                            <h3 className="cost__cgst"> ₹ {cgst}</h3>
+                            <h3 className="cost__cgst"> ₹ {cgst.toFixed(2)}</h3>
                             <h3 className="sgst">SGST</h3>
-                            <h3 className="cost__sgst">₹ {sgst}</h3>
+                            <h3 className="cost__sgst">₹ {sgst.toFixed(2)}</h3>
                             <h3 className="shippingcharges">Shipping Charges</h3>
                             <h3 className="cost__ship">₹ {shipping}</h3>
                         </div>
@@ -133,8 +133,8 @@ function MyCart(props){
                     <hr/>
                     <div className="total__sect">
                         <h3 className="total">Total</h3>
-                        <h3 className="cost__total">₹ {total}</h3>
-                        {localStorage.setItem("total",total)}
+                        <h3 className="cost__total">₹ {total.toFixed(2)}</h3>
+                        {localStorage.setItem("total",total.toFixed(2))}
                     </div>
                     <div className="checkout__btn">
                         <Bt variant="custom" onClick={(e) => {

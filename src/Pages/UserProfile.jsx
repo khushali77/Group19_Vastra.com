@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { Marginer } from "../Components/marginer";
 import "../Css/UserProfile.css";
 import axios from "axios";
+import {toast} from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css'; 
 
 const BoxLayout = styled.div`
 margin-left: 30%;
@@ -143,6 +145,7 @@ function UserProfile(){
              const x = await axios.put(`http://localhost:4000/api/userprof/${userid}`, {name,address,email,password}) 
           console.log(x.data)
           localStorage.setItem("userinfo",JSON.stringify(x.data.user));
+          toast.dark('Information Saved!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
           // window.location.href='/userprofile';
      } catch (err) {
          console.log(err);
