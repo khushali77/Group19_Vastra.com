@@ -11,6 +11,12 @@ import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
 import axios from "axios";
 
+//login pages for user
+//returns the final page for the user login , the form and submit etc using the css properties decided in common and index jsx
+
+
+
+
 export function LoginForm(props) {
   const { switchToSignup } = useContext(AccountContext);
   const{switchToSignin2}=useContext(AccountContext);

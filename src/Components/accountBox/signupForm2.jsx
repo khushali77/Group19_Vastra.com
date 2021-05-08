@@ -10,6 +10,9 @@ import {
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
 
+//signup pages for retailer ir admin
+//returns the final page for the admin or retailer signup, the form and submit etc using the css properties decided in common and index jsx
+
 export function SignupForm2(props) {
   const { switchToSignin2 } = useContext(AccountContext);
 

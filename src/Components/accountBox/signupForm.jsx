@@ -11,6 +11,10 @@ import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
 import axios from "axios";
 
+//signup pages for user
+//returns the final page for the user signup, the form and submit etc using the css properties decided in common and index jsx
+
+
 export function SignupForm(props) {
   const { switchToSignin } = useContext(AccountContext);
   const [name,setName] = useState("");
