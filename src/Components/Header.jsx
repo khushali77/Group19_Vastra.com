@@ -5,6 +5,25 @@ import axios from "axios";
 
 function Header(){
 
+    const getInfo = async(e) =>{
+        const userid = localStorage.getItem("userid");
+        e.preventDefault();
+        try {
+               const x = await axios.get(`http://localhost:4000/api/userprof/${userid}`, {
+               method:'GET',
+               headers:{
+                   "Content-type":"application/json; charset=UTF-8"
+               }
+       }) 
+            console.log(x.data)
+            localStorage.setItem("userinfo",JSON.stringify(x.data));
+            window.location.href='/userprofile';
+       } catch (err) {
+           console.log(err);
+           console.log("ERROR");
+       }
+    }
+
     const getCart = async(e) =>{
         const userid = localStorage.getItem("userid");
         e.preventDefault();
@@ -56,7 +75,7 @@ function Header(){
                 <Nav className="app__navbar__right">
                 {/* Navbar Dropdown section*/}
                 <NavDropdown title="User  " id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="userprofile">My Profile</NavDropdown.Item>
+                    <NavDropdown.Item href="userprofile" onClick={(e)=>getInfo(e)}>My Profile</NavDropdown.Item>
                     <NavDropdown.Item href="settings">Settings</NavDropdown.Item>
                     <NavDropdown.Divider />
                     {localStorage.getItem("userid")===null?<NavDropdown.Item href="/">Log in</NavDropdown.Item>:<NavDropdown.Item href="/" onClick={()=>{

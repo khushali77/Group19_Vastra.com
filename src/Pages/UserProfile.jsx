@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Marginer } from "../Components/marginer";
-import "../Css/UserProfile.css"
+import "../Css/UserProfile.css";
+import axios from "axios";
 
 const BoxLayout = styled.div`
 margin-left: 30%;
@@ -126,39 +127,56 @@ const SmallText = styled.h5`
 `;
 
 function UserProfile(){
+
+    const userinfo = JSON.parse(localStorage.getItem("userinfo"));
+    console.log(userinfo)
+
+    const [name,setName] = useState(userinfo.name);
+    const [address,setAddress] = useState(userinfo.address);
+    const [email,setEmail] = useState(userinfo.email);
+    const [password,setPassword] = useState(userinfo.password);
+
+    const setInfo = async(e) =>{
+      const userid = localStorage.getItem("userid");
+      e.preventDefault();
+      try {
+             const x = await axios.put(`http://localhost:4000/api/userprof/${userid}`, {name,address,email,password}) 
+          console.log(x.data)
+          localStorage.setItem("userinfo",JSON.stringify(x.data.user));
+          // window.location.href='/userprofile';
+     } catch (err) {
+         console.log(err);
+         console.log("ERROR");
+     }
+  }
+
     return(
         <div class="backgroundprofile">
-
         <BoxLayout>
         <HeaderContainer>
               <HeaderText>Vastra.com</HeaderText>
               <SmallText>User profile</SmallText>
             </HeaderContainer>
-      <FormLayout>
+      <FormLayout onSubmit={(e)=>{console.log(e)}}>
       <MutedLink >
           Name{" "}
           </MutedLink>
-        <Input type="Username" placeholder="Full name" />
-        <MutedLink >
-          Phone number{" "}
-          </MutedLink>
-        <Input type="password" placeholder="Enter Contact number" />
+        <Input type="Username" placeholder="Full name" value={name} onChange={(e)=>{setName(e.target.value)}}/>
         <MutedLink >
           Default address{" "}
           </MutedLink>
-        <Input type="password" placeholder="Set delivery address" />
+        <Input type="text" placeholder="Set delivery address" value={address} onChange={(e)=>{setAddress(e.target.value)}}/>
         <MutedLink >
           E-mail address{" "}
           </MutedLink>
-        <Input type="password" placeholder="Change Email address or Enter original" />
+        <Input type="email" placeholder="Change Email address or Enter original" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
         <MutedLink >
           Password{" "}
           </MutedLink>
-        <Input type="password" placeholder="Change password or Enter original" />
+        <Input type="password" placeholder="Change password or Enter original" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
       </FormLayout>
-      
       <Marginer direction="vertical" margin={10} />
-      <SubmitButton type="submit">Save</SubmitButton>
+      <SubmitButton type="submit" onClick={(e)=>{setInfo(e)}}>Save</SubmitButton>
       <Marginer direction="vertical" margin="1em" />
     </BoxLayout>
     </div>

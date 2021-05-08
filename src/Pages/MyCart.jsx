@@ -95,6 +95,9 @@ function MyCart(props){
 
     console.log(price);
 
+    const userinfo = JSON.parse(localStorage.getItem("userinfo"))
+    console.log(userinfo)
+
     let subtotal = price;
     let cgst = price*0.25;
     let sgst = price*0.3;
@@ -115,7 +118,7 @@ function MyCart(props){
                     <h2>Details</h2>
                     <hr/>
                     <div className="user__details">
-                        <h4 className="shipping__address">Shipping details : This is my address, why you bitch are looking here. Get lost.</h4>
+                        {userinfo.address?<h4 className="shipping__address">Shipping details : {userinfo.address}</h4>:<h4 className="shipping__address">Shipping details : Kindly add you address on <Link to='/userprofile'>Your Profile</Link> </h4>}
                         <div className="cost__details">
                             <h3 className="subtotal">Subtotal</h3>
                             <h3 className="cost__subtotal"> ₹ {subtotal}</h3>
