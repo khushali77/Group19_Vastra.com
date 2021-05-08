@@ -13,7 +13,6 @@ import axios from "axios";
 
 export function LoginForm(props) {
   const { switchToSignup } = useContext(AccountContext);
-  const{switchToSignin2}=useContext(AccountContext);
 
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
@@ -61,9 +60,6 @@ export function LoginForm(props) {
           Register
         </BoldLink>
       </MutedLink>
-        <BoldLink href="#" onClick={switchToSignin2}>
-          Continue as retailer.
-        </BoldLink>
     </BoxContainer>
   );
 }

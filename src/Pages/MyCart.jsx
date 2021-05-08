@@ -118,7 +118,7 @@ function MyCart(props){
                     <h2>Details</h2>
                     <hr/>
                     <div className="user__details">
-                        {userinfo.address?<h4 className="shipping__address">Shipping details : {userinfo.address}</h4>:<h4 className="shipping__address">Shipping details : Kindly add you address on <Link to='/userprofile'>Your Profile</Link> </h4>}
+                        {userinfo.address===null?<h4 className="shipping__address">Shipping details : {userinfo.address}</h4>:<h4 className="shipping__address">Shipping details : Kindly add you address on <Link to='/userprofile'>Your Profile</Link> </h4>}
                         <div className="cost__details">
                             <h3 className="subtotal">Subtotal</h3>
                             <h3 className="cost__subtotal"> ₹ {subtotal.toFixed(2)}</h3>

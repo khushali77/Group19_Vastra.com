@@ -102,6 +102,7 @@ function DisplayCard(props){
 function Products(){
    
     const [dataList,setdataList] = useState(()=>JSON.parse(window.localStorage.getItem('data')));
+    console.log(setdataList);
     console.log(dataList);
     const name = window.localStorage.getItem("name");
     console.log(name);

@@ -46,7 +46,7 @@ function Footer(){
                   <li><Link to="/" onClick={(e)=>{CatItem("men",e)}}>Men</Link></li>
                   <li><Link to="/" onClick={(e)=>{CatItem("women",e)}}>Women</Link></li>
                   <li><Link to="/" onClick={(e)=>{CatItem("kids",e)}}>Kids</Link></li>
-                  <li><Link to="/" onClick={(e)=>{CatItem("traditionals",e)}}>Traditionals</Link></li>
+                  <li><Link to="/" onClick={(e)=>{CatItem("traditional",e)}}>Traditional</Link></li>
                   <li><Link to="/" onClick={(e)=>{CatItem("western",e)}}>Western</Link></li>
                   </BrowserRouter>
                 </ul>

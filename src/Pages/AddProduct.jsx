@@ -11,17 +11,10 @@ const AddProduct = () => {
     const [price,setPrice] = useState(0);
     const [discount,setDiscount] = useState(0);
     const [quantity,setQuantity] = useState(0);
-    const [category,setCategory] = useState();
-    const [brand,setBrand] = useState();
-    const [isize,setSize] = useState();
     const [imageurl,setImageURL] = useState("");
 
 
     const handleSubmit = async (e) => {
-        // console.log(file);
-        // let formData = new FormData();
-
-        // formData.append('image')
         console.log(productid,title,des,price,discount,quantity,imageurl);
         e.preventDefault()
         try {

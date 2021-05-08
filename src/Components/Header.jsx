@@ -63,8 +63,6 @@ function Header(){
        }
     }
 
-    const userinfo = JSON.parse(localStorage.getItem("userinfo"));
-
     return(
         <div className="header">
             {/* Navbar using Bootstrap */}
