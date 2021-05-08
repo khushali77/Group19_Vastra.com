@@ -63,6 +63,8 @@ function Header(){
        }
     }
 
+    const userinfo = JSON.parse(localStorage.getItem("userinfo"));
+
     return(
         <div className="header">
             {/* Navbar using Bootstrap */}
@@ -74,9 +76,8 @@ function Header(){
                 </Nav>
                 <Nav className="app__navbar__right">
                 {/* Navbar Dropdown section*/}
-                <NavDropdown title="User  " id="collasible-nav-dropdown">
+                <NavDropdown title="User" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="userprofile" onClick={(e)=>getInfo(e)}>My Profile</NavDropdown.Item>
-                    <NavDropdown.Item href="settings">Settings</NavDropdown.Item>
                     <NavDropdown.Divider />
                     {localStorage.getItem("userid")===null?<NavDropdown.Item href="/">Log in</NavDropdown.Item>:<NavDropdown.Item href="/" onClick={()=>{
                             localStorage.clear()}}>Log out</NavDropdown.Item>}
