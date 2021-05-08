@@ -30,6 +30,7 @@ const AddProduct = () => {
                 console.log(res.data)
                 console.log(res.data.data._id)
                 localStorage.setItem("pid",res.data.data._id);
+                window.location.href='/addproduct';
             })     
         } catch (err) {
             alert(err.response)

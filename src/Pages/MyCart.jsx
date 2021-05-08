@@ -99,7 +99,7 @@ function MyCart(props){
     console.log(userinfo)
 
     let subtotal = price;
-    let cgst = price*0.2;
+    let cgst = price*0.08;
     let sgst = price*0.1;
     let shipping = 0;
 
