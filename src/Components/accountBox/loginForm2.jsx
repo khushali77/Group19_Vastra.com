@@ -10,6 +10,11 @@ import {
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
 
+
+//login pages for retailer
+//returns the final page for the Retailer or admin login  the form and submit etc using the css properties decided in common and index jsx
+
+
 export function LoginForm2(props) {
   const { switchToSignup2 } = useContext(AccountContext);
   const { switchToSignin} = useContext(AccountContext);
@@ -32,7 +37,7 @@ export function LoginForm2(props) {
       <MutedLink >
         Don't have an account?
         <BoldLink href="#" onClick={switchToSignup2}>
-          Register
+          Login
         </BoldLink>
       </MutedLink>
         <BoldLink href="#" onClick={switchToSignin}>

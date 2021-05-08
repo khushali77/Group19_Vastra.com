@@ -6,6 +6,9 @@ import axios from "axios";
 import {toast} from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css'; 
 
+
+//contains the layout as well as components for the profile and settings page
+
 const BoxLayout = styled.div`
 margin-left: 30%;
 margin-top: 4%;

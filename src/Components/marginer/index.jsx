@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+//uses the styled components directory to set default margins
+//is used only in login pages
+
 const HorizontalMargin = styled.span`
   display: flex;
   width: ${({ margin }) =>

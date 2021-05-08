@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+// basic properties for all the features under login pages, form, input, layouts etc. It is like the CSS properties for all the login pages
+//styled components is used to get pre-set features
 export const BoxContainer = styled.div`
   width: 80%;
   align: center;

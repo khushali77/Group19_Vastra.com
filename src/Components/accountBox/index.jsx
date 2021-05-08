@@ -6,6 +6,8 @@ import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
 import {SignupForm2} from "./signupForm2";
 
+//CSS properties for all the parts that remain common to the login pages, along with linking them together
+//layouts, margins for all the components
 const BoxContainer = styled.div`
 margin-top: 5%;
 margin-bottom: 5%;
