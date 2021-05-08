@@ -79,8 +79,7 @@ function Header(){
                 <NavDropdown title="User" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="userprofile" onClick={(e)=>getInfo(e)}>My Profile</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    {localStorage.getItem("userid")===null?<NavDropdown.Item href="/">Log in</NavDropdown.Item>:<NavDropdown.Item href="/" onClick={()=>{
-                            localStorage.clear()}}>Log out</NavDropdown.Item>}
+                    {localStorage.getItem("userid")===null?<NavDropdown.Item href="/">Log in</NavDropdown.Item>:<NavDropdown.Item href="/" onClick={()=>{localStorage.clear()}}>Log out</NavDropdown.Item>}
                 </NavDropdown>
                 <Nav.Link href="/fav" onClick={(e)=>getFav(e)}>Favourites</Nav.Link>
                 <Nav.Link href="/mycart" onClick={(e)=>getCart(e)}>My Cart</Nav.Link>

@@ -142,11 +142,11 @@ function UserProfile(){
       const userid = localStorage.getItem("userid");
       e.preventDefault();
       try {
-             const x = await axios.put(`http://localhost:4000/api/userprof/${userid}`, {name,address,email,password}) 
-          console.log(x.data)
-          localStorage.setItem("userinfo",JSON.stringify(x.data.user));
-          toast.dark('Information Saved!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
-          // window.location.href='/userprofile';
+            const x = await axios.put(`http://localhost:4000/api/userprof/${userid}`, {name,address,email,password}) 
+            console.log(x.data)
+            localStorage.setItem("userinfo",JSON.stringify(x.data.user));
+            toast.dark('Information Saved!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
+            // window.location.href='/userprofile';
      } catch (err) {
          console.log(err);
          console.log("ERROR");
@@ -168,7 +168,7 @@ function UserProfile(){
         <MutedLink >
           Default address{" "}
           </MutedLink>
-        <Input type="text" placeholder="Set delivery address" value={address} onChange={(e)=>{setAddress(e.target.value)}}/>
+        <Input type="text" placeholder="Add your address" value={address} onChange={(e)=>{setAddress(e.target.value)}}/>
         <MutedLink >
           E-mail address{" "}
           </MutedLink>
