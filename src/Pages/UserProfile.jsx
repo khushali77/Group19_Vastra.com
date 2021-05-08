@@ -146,7 +146,7 @@ function UserProfile(){
             console.log(x.data)
             localStorage.setItem("userinfo",JSON.stringify(x.data.user));
             toast.dark('Information Saved!',{position: toast.POSITION.BOTTOM_LEFT,autoClose:3000})
-            // window.location.href='/userprofile';
+            window.location.href='/userprofile';
      } catch (err) {
          console.log(err);
          console.log("ERROR");
