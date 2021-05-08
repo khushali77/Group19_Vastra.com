@@ -3,6 +3,7 @@ import React, { useEffect,useState, useRef } from "react";
 export default function PayPal(){
 
     const [total,setTotal] = useState(localStorage.getItem("total")); 
+    console.log(setTotal);
     const paypal = useRef()
 
     useEffect(()=>{
